@@ -1,0 +1,326 @@
+﻿<xml version='2.0'>
+  <module totalduration="25:00">
+    <!--<slide id="slide_disclaimer" type="2" sno="1" maintitle="Disclaimer" name="Disclaimer" title="Disclaimer" refid="slide1ref" duration="00:33">
+      <audio src='audio/1.mp3'></audio>
+      <frame stime='00' id='s2dframe1' stype='fadein' >
+        <element stime='00' id='s2bimg1' stype='fadein'/>
+        <element stime='00' id='s2code' stype='fadein'/>
+
+      </frame>
+    </slide>-->
+
+    <slide id="slide1" type="1" sno="1" maintitle="Welcome" name="Welcome" title="Welcome" refid="slide1ref" duration="00:34">
+      <audio src='audio/2.mp3'></audio>
+      <frame stime='00' id='s1frame1' stype='fadein' >
+        <element stime='00' id='s1bimg1' stype='fadein'/>
+     </frame>
+    </slide>
+
+    <slide id="slide2" type="2" sno="2" maintitle="Learning Objectives" name="Learning Objectives" title="Learning Objectives" refid="slide1ref" duration="00:22">
+      <audio src='audio/3.mp3'></audio>
+      <frame stime='00' id='s2frame1' stype='fadein'>
+        <element stime='00' id='s2txt1' stype='fadein'/>
+        <element stime='03' id='s2txt2' stype='fadein'/>
+        <element stime='06' id='s2txt3' stype='fadein'/>
+        <element stime='10' id='s2txt4' stype='fadein'/>
+        <element stime='12' id='s2txt5' stype='fadein'/>
+        <element stime='17' id='s2txt6' stype='fadein'/>
+      </frame>
+    </slide>
+
+
+    <slide id="slide3" type="2" sno="3" maintitle="Erectile Dysfunction" name="Definition" title="Definition" refid="slide1ref" duration="00:55">
+      <audio src='audio/4.mp3'></audio>
+      <frame stime='00' id='s3frame1' stype='fadein' >   
+        <element stime='00' id='s3img2' stype='fadein'/>
+        <element stime='06' id='s3img3' stype='fadein'/>
+        <element stime='18' id='s3img4' stype='fadein'/>
+        <element stime='13' id='s3img5' stype='fadein'/>
+      </frame>
+    </slide>
+    <slide id="slide3a" type="2" sno="4" maintitle="Anatomy" name="Anatomy of the penis" title="Anatomy of the penis" initialize="dragdrop" refid="slide1ref" duration="00:58">
+      <audio src='audio/5.mp3'></audio>
+      <frame stime='00' id='s3aframe1' stype='fadein' htype='fadeout' hstime='29'>
+        <element stime='00' id='s3aimg1' stype='fadein'/>
+        <element stime='00' id='s3aimg2' stype='fadein'/>
+        <element stime='00' id='s3aimg3' stype='fadein'/>
+        <element stime='04' id='s3aimg4' stype='fadein'/>
+        <element stime='04' id='s3aimg5' stype='fadein'/>
+        <element stime='07' id='s3aimg6' stype='fadein'/>
+        <element stime='08' id='s3aimg7' stype='fadein'/>
+        <element stime='08' id='s3aimg8' stype='fadein'/>
+        <element stime='27' id='s3aimg9' stype='fadein'/>
+        <element stime='18' id='s3aimg10' stype='fadein'/>
+        <element stime='18' id='s3aimg11' stype='fadein'/>
+       </frame>
+      <frame stime='29' id='s3aframe2' stype='fadein'>
+        <element stime='29' id='s3aimg12' stype='fadein'/>
+        <element stime='29' id='s3aimg13' stype='fadein'/>
+        <element stime='43' id='s3aimg14' stype='fadein'/>
+      </frame>
+    </slide>
+
+    <slide id="slide4" type="1" sno="5"  name="Arterial blood supply" title="Arterial blood supply" refid="slide1ref" duration="00:47">
+      <audio src='audio/6.mp3'></audio>
+      <frame stime='00' id='s4frame1' stype='fadein'  htype='fadeout' hstime='32'>
+        <element stime='00' id='s4img1' stype='fadein'/>
+        <element stime='00' id='s4img2' stype='fadein'/>
+        <element stime='08' id='s4img3' stype='fadein'/>
+        <element stime='13' id='s4img4' stype='fadein'/>
+        <element stime='23' id='s4img5' stype='fadein'/>
+      </frame>
+      <frame stime='33' id='s4frame2' stype='fadein'  >
+        <element stime='33' id='s4img7' stype='fadein'/>
+        <element stime='00' id='s4img8' stype='fadein'/>
+        <element stime='08' id='s4img9' stype='fadein'/>
+        <element stime='13' id='s4img10' stype='fadein'/>
+        <element stime='23' id='s4img11' stype='fadein'/>
+      </frame>
+     
+    </slide>
+    <slide id="lnact_1" type="2" sno="6" maintitle="Knowledge check" name="Learning activity" title="Learning activity" refid="slide1ref" duration="00:08">
+      <audio src='audio/7.mp3'></audio>
+      <frame stime='00' id='s3frame1' stype='fadein' >
+      </frame>
+    </slide>
+
+
+    <slide id="slide5" type="2" sno="7" maintitle="Anatomy"  name="Venous drainage" title="Venous drainage" refid="slide1ref" duration="01:23">
+      <audio src='audio/8.mp3'></audio>
+      <frame stime='00' id='s5frame1' stype='fadein'  >
+        <element stime='00' id='s5img1' stype='fadein'/>
+        <element stime='11' id='s5img2' stype='fadein'/>
+        <element stime='18' id='s5img3' stype='fadein'/>
+        <element stime='33' id='s5img4' stype='fadein'/>
+        <element stime='43' id='s5img5' stype='fadein'/>
+     </frame>
+     </slide>
+
+    <slide id="slide6" type="2" sno="8" maintitle="Physiology" name="Vascular dynamics of  penile erection" title="Vascular dynamics of  penile erection" refid="slide1ref" duration="01:06">
+      <audio src='audio/9.mp3'></audio>
+      <frame stime='00' id='s6frame1' stype='fadein'>
+        <element stime='00' id='s6img1' stype='fadein'/>
+        <element stime='11' id='s6img2' stype='fadein'/>
+        <element stime='11' id='s6img3' stype='fadein'/>
+        <element stime='19' id='s6img4' stype='fadein'/>
+        <element stime='35' id='s6img5' stype='fadein'/>
+        <element stime='47' id='s6img6' stype='fadein'/>
+      </frame>
+    </slide>
+
+    <slide id="slide7" type="1" sno="9"  name="Mechanisms of penile erection" title="Mechanisms of penile erection" refid="slide1ref" duration="01:14">
+      <audio src='audio/10.mp3'></audio>
+      <frame stime='00' id='s7frame1' stype='fadein' htype='fadeout' hstime='60' >
+        <element stime='00' id='s7aimg1' stype='fadein'/>
+        <element stime='04' id='s7aimg2' stype='fadein'/>
+        <element stime='17' id='s7aimg3' stype='fadein'/>
+        <element stime='27' id='s7aimg4' stype='fadein'/>
+        <element stime='33' id='s7aimg5' stype='fadein'/>
+        <element stime='38' id='s7aimg6' stype='fadein'/>
+        <element stime='44' id='s7aimg7' stype='fadein'/>
+      </frame>
+     <frame stime='60.5' id='s7frame2' stype='fadein' >
+       <element stime='60.5' id='s7bimg2' stype='fadein'/>
+        <element stime='63' id='s7bimg3' stype='fadein'/>
+        <element stime='67' id='s7bimg5' stype='fadein'/>
+        <element stime='70' id='s7bimg4' stype='fadein'/>
+      </frame>
+    </slide>
+
+
+
+    <slide id="slide8" type="1" sno="10"  name="Molecular mechanisms of penile erection" title="Molecular mechanisms of penile erection" refid="slide1ref" duration="02:00">
+      <audio src='audio/11.mp3'></audio>
+      <frame stime='00' id='s8frame1' stype='fadein'>
+        <element stime='00' id='s8img1' stype='fadein'/>
+        <element stime='09' id='s8img2' stype='fadein'/>
+        <element stime='19' id='s8img3' stype='fadein'/>
+        <element stime='30' id='s8img4' stype='fadein'/>
+        <element stime='49' id='s8img5' stype='fadein'/>
+        <element stime='58' id='s8img6' stype='fadein'/>
+        <element stime='75' id='s8img2h' stype='fadein'/>
+        <element stime='106' id='s8img3h' stype='fadein'/>
+      </frame>
+    </slide>
+
+    <slide id="lnact_2" type="2" sno="11" maintitle="Knowledge check" name="Learning activity" title="Learning activity" refid="slide1ref" duration="00:08">
+      <audio src='audio/7.mp3'></audio>
+      <frame stime='00' id='s3frame1' stype='fadein' >
+      </frame>
+    </slide>
+    <slide id="slide8a" type="2" sno="12" maintitle="Physiology" name="Types of ED" title="Types of ED" refid="slide1ref" duration="00:50">
+      <audio src='audio/13.mp3'></audio>
+      <frame stime='00' id='s8aframe1' stype='fadein' htype='fadeout' hstime='29'>
+        <!--<element stime='00' id='s8aimg1' stype='fadein'/>-->
+        <element stime='00' id='s8aimg2' stype='fadein'/>
+        <element stime='00' id='s8aimg3' stype='fadein'/>
+        <element stime='00' id='s8aimg4' stype='fadein'/>
+        <element stime='16' id='s8aimg5' stype='fadein'/>
+        <element stime='16' id='s8aimg6' stype='fadein'/>
+        <element stime='16' id='s8aimg7' stype='fadein'/>
+        <element stime='16' id='s8aimg8' stype='fadein'/>
+        <element stime='25' id='s8aimg9' stype='fadein'/>
+        <element stime='25' id='s8aimg10' stype='fadein'/>
+       </frame>
+      <frame stime='29' id='s8aframe2' stype='fadein' >
+        <element stime='30' id='s8aimg11' stype='fadein'/>
+        <element stime='38' id='s8aimg12' stype='fadein'/>
+        <element stime='40' id='s8aimg13' stype='fadein'/>
+        <element stime='40' id='s8aimg14' stype='fadein'/>
+        </frame>
+      </slide>
+
+
+
+
+    <slide id="slide9" type="1" sno="13"  name="Vasculogenic ED" title="Vasculogenic ED" refid="slide1ref" duration="01:39">
+      <audio src='audio/14.mp3'></audio>
+      <frame stime='00' id='s9frame1' stype='fadein'  htype='fadeout' hstime='22' >
+        <element stime='00' id='s9txt1' stype='fadein'/>
+        <element stime='04' id='s9img1' stype='fadein'/>
+        </frame>
+         <frame stime='22' id='s9frame2' stype='fadein' htype='fadeout' hstime='56'>
+            <element stime='23' id='s9img2' stype='fadein'/>
+            <element stime='40' id='s9txt2' stype='fadein'/>
+            <element stime='40' id='s9txt3' stype='fadein'/>
+            <element stime='40' id='s9txt4' stype='fadein'/>
+          <element stime='40' id='s9txt5' stype='fadein'/>
+     </frame>
+      <frame stime='56' id='s9frame3' stype='fadein' >
+       <!--<element stime='87' id='s9img3' stype='fadein'/>-->
+        <element stime='58' id='s9img3a' stype='fadein'/>
+            <element stime='70' id='s9img4' stype='fadein'/>
+            <element stime='80' id='s9img5' stype='fadein'/>
+            <element stime='89' id='s9img6' stype='fadein'/>
+      </frame>
+    </slide>
+
+    <slide id="slide12" type="1" sno="14"  name="Neurogenic and Hormonal causes" title="Neurogenic and Hormonal causes" refid="slide1ref" duration="00:48">
+      <audio src='audio/15.mp3'></audio>
+      <frame stime='00' id='s12frame1' stype='fadein'>
+        <element stime='00' id='s12img1' stype='fadein'/>
+        <element stime='26' id='s12img2' stype='fadein'/>
+        
+      </frame>
+    </slide>
+
+    <slide id="slide12a" type="1" sno="15"   name="Psychogenic causes" title="Psychogenic causes" refid="slide1ref" duration="01:16">
+      <audio src='audio/16.mp3'></audio>
+      <frame stime='00' id='s12aframe1' stype='fadein' htype='fadeout' hstime='27'>
+        <element stime='00' id='s12aimg1' stype='fadein'/>
+        <element stime='21' id='s12atxt1' stype='fadein'/>
+        <element stime='23' id='s12atxt2' stype='fadein'/>
+        <element stime='25' id='s12atxt3' stype='fadein'/>
+      </frame>
+      <frame stime='28' id='s12aframe2' stype='fadein' >
+        <element stime='28' id='s12aimg2' stype='fadein'/>
+        <element stime='31' id='s12aimg3' stype='fadein'/>
+        <element stime='32' id='s12aimg4' stype='fadein'/>
+        <element stime='51' id='s12aimg5' stype='fadein'/>
+        <element stime='53' id='s12aimg6' stype='fadein'/>
+        <element stime='54' id='s12aimg7' stype='fadein'/>
+        <element stime='55.5' id='s12aimg8' stype='fadein'/>
+      </frame>
+    </slide>
+    <slide id="lnact_3" type="2" sno="16" maintitle="Knowledge check" name="Learning activity" title="Learning activity" refid="slide1ref" duration="00:08">
+      <audio src='audio/7.mp3'></audio>
+      <frame stime='00' id='s3frame1' stype='fadein' >
+      </frame>
+    </slide>
+    <slide id="slide15" type="2" sno="17" maintitle="Physiology" name="Medication induced" title="Medication induced" refid="slide1ref" duration="01:04">
+      <audio src='audio/18.mp3'></audio>
+      <frame stime='00' id='s14frame1' stype='fadein' >
+        <element stime='00' id='s15img1' stype='fadein'/>
+        <element stime='08.5' id='s15img2' stype='fadein'/>
+        <element stime='15.5' id='s15img3' stype='fadein'/>
+        <element stime='30' id='s15img4' stype='fadein'/>
+        <element stime='47' id='s15img5' stype='fadein'/>
+        <element stime='55.5' id='s15img6' stype='fadein'/>
+      </frame>
+   </slide>
+
+
+
+    <slide id="slide14" type="2" sno="18" maintitle="Risk of developing ED"  name="Risk Factors" title="Risk Factors" refid="slide1ref" duration="00:40">
+      <audio src='audio/19.mp3'></audio>
+      <frame stime='00' id='s14frame1' stype='fadein' htype='fadeout' hstime='28'>
+        <element stime='00' id='s14txt1' stype='fadein'/>
+        <element stime='08' id='s14img1' stype='fadein'/>
+        <element stime='10.5' id='s14img2' stype='fadein'/>
+        <element stime='12' id='s14img3' stype='fadein'/>
+        <element stime='13.5' id='s14img4' stype='fadein'/>
+        <element stime='16' id='s14img5' stype='fadein'/>
+        <element stime='17.5' id='s14img6' stype='fadein'/>
+        <element stime='18' id='s14img7' stype='fadein'/>
+        <element stime='24' id='s14img8' stype='fadein'/>
+      </frame>
+      <frame stime='29' id='s14frame2' stype='fadein'>
+        <element stime='29' id='s14img1a' stype='fadein'/>
+        <element stime='31.5' id='s14img2a' stype='fadein'/>
+        <element stime='32.5' id='s14img3a' stype='fadein'/>
+        <element stime='34' id='s14img4a' stype='fadein'/>
+        <element stime='35.5' id='s14img5a' stype='fadein'/>
+        <element stime='38' id='s14img6a' stype='fadein'/>
+      </frame>
+    </slide>
+
+    <slide id="slide16" type="1" sno="19"  name="Chronic diseases &#38; increased risk" title="Chronic diseases &#38; increased risk" refid="slide1ref" initialize="dragdrop" duration="00:42">
+      <audio src='audio/20.mp3'></audio>
+      <frame stime='00' id='s16frame1' stype='fadein'>
+        <!--<element stime='00' id='s16txt1' stype='fadein'/>
+        <element stime='00' id='s16txt2' stype='fadein' />-->
+        <element stime='00' id='s16img1' stype='fadein'/>
+        <element stime='15' id='s16img2' stype='fadein'/>
+        <element stime='18' id='s16img3' stype='fadein'/>
+        <element stime='23' id='s16img4' stype='fadein'/>
+        <element stime='27' id='s16img5' stype='fadein'/>
+        <element stime='30' id='s16img6' stype='fadein'/>
+        <element stime='34' id='s16img7' stype='fadein'/>
+        <element stime='38' id='s16img8' stype='fadein'/>
+        <element stime='00' id='s16img9' stype='fadein'/>
+      </frame>
+
+    </slide>
+    <slide id="slide16a" type="1" sno="20" name="Epidemiology" title="Epidemiology" refid="slide1ref" duration="00:50">
+      <audio src='audio/21.mp3'></audio>
+      <frame stime='00' id='s16aframe1' stype='fadein' >
+         <element stime='35' id='s16atxt1' stype='fadein'/>
+          <element stime='00' id='s16aimg1' stype='fadein'/>
+          <element stime='09.5' id='s16aimg2' stype='fadein'/>
+          <element stime='15' id='s16aimg3' stype='fadein'/>
+          <element stime='19' id='s16aimg4' stype='fadein'/>
+          <element stime='24' id='s16aimg5' stype='fadein'/>
+      </frame>
+
+
+    </slide>
+    <slide id="lnact_4" type="2" sno="21" maintitle="Knowledge check" name="Learning activity" title="Learning activity" refid="slide1ref" duration="00:08">
+      <audio src='audio/7.mp3'></audio>
+      <frame stime='00' id='s3frame1' stype='fadein' >
+      </frame>
+    </slide>
+    <slide id="slide17" type="2" sno="22" maintitle="Significance of ED" name="Why diagnose ED?" title="Why diagnose ED?" refid="slide1ref" duration="00:39">
+      <audio src='audio/23.mp3'></audio>
+      <frame stime='00' id='s17frame1' stype='fadein'>
+        <element stime='01' id='s17txt1' stype='fadein' />
+        <element stime='06' id='s17txt2' stype='fadein'/>
+        <element stime='06' id='s17txt3' stype='fadein'/>
+        <element stime='06' id='s17txt4' stype='fadein'/>
+        <element stime='06' id='s17txt5' stype='fadein'/>
+        <element stime='30' id='s17txt6' stype='fadein'/>
+        <element stime='30' id='s17txt7' stype='fadein'/>
+        <element stime='30' id='s17txt8' stype='fadein'/>
+        <element stime='30' id='s17txt9' stype='fadein'/>
+        <element stime='30' id='s17txt10' stype='fadein'/>
+      </frame>
+    </slide>
+
+    <slide id="slide25" type="2" sno="23" maintitle="End of Module" name="Thank you" title="Thank you" refid="slide1ref" duration="00:08">
+      <audio src='audio/24.mp3'></audio>
+      <frame stime='00' id='s25frame1' stype='fadein' >
+        <element stime='00' id='s25bimg1' stype='fadein'/>
+      </frame>
+   </slide>
+
+  </module>
+</xml>

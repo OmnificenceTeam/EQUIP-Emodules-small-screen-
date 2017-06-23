@@ -1,0 +1,485 @@
+#S12TBL1 tr td:first-child {
+    background-color: #00717f;
+    background: -o-linear-gradient(bottom, #00717f 65%, #00797f 100%);
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.65, #00717f), color-stop(1, #00797f) );
+    background: -moz-linear-gradient( center top, #00717f 65%, #00797f 100% );
+}
+
+.plaintxt {
+    color: black;
+    font-weight: normal;
+}
+
+.translist ul, li {
+    color: #282828;
+    margin-left: -10px;
+}
+
+.options {
+    border: solid orange;
+    width: 110px;
+    background-color: orange;
+    text-align: center;
+    margin-top: 10px;
+    left: 650px;
+}
+
+.dragdroptxt {
+    height: 33px;
+    width: 59px;
+    float: left;
+    font-size: 10px;
+}
+
+.fill {
+    left: 650px;
+}
+
+.customTooltip {
+    margin-left: -30px !important;
+}
+
+.tooltip.bottom {
+    margin-top: -1px !important;
+}
+
+.customtooltip1 {
+    margin-left: -104px !important;
+}
+
+.dragdiv {
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+#module1 {
+	overflow: hidden;
+	font-family: scala sans;
+	width: 895px;
+	margin: 0px auto;
+	height: 640px;
+}
+
+#wrap {
+    width: 888px;
+    height: 640px;
+    border-left: 4px solid #82786f;
+    border-right: 4px solid #82786f;
+	margin-left:0;
+}
+
+.header-top {
+    background-color: #82786f;
+    height: 4px;
+}
+
+.header-help {
+      background-color: #efeff0;
+   
+}
+
+
+.module-title {
+   
+    color: #d52b1e;
+  
+}
+
+.hidebutton {
+    font-family:Arial;
+    background-color: #d52b1e;
+    font-style:italic;
+}
+
+.breakout {
+    background-color: #d52b1e;
+}
+
+.slider > .highlight-track {
+    background-color: #d52b1e !important;
+    background: -webkit-linear-gradient(top,#d52b1e,#d52b1e) !important;
+}
+
+.playlist-header {
+   
+    background-color: #d52b1e;
+    
+}
+
+.playlist-footer {
+  
+    background-color: #d52b1e;
+    
+}
+
+.list-items.active {
+    background-color: #d52b1e ;
+}
+
+.style-5::-webkit-scrollbar-thumb {
+    background-color: #d52b1e;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,.17);
+}
+
+
+.GlossaryData {
+    background-color: #efeff0;
+    font-family:Arial;
+
+}
+
+.GlossaryTitle{
+     font-family:Arial;
+}
+.GlossaryData h3{
+   
+    font-family:Arial;
+
+}
+.GlossaryTitle p:hover {
+    background-color: #efeff0;
+}
+
+.GlossaryTitle p.active  {
+    background-color: #efeff0;
+}
+
+
+
+.tooltip-inner {
+    background-color: #d52b1e !important;
+}
+
+.transcript::-webkit-scrollbar-thumb {
+    background-color: #d52b1e;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,.17);
+}
+
+.header-help h4 {
+    margin: 20px !important;
+     font-family:Arial;
+}
+
+body{
+    font-family:Arial;
+}
+
+.transcript{
+    font-family:Arial;
+        border: 2px solid rgba(244,211,168,0.8);
+}
+
+.slidePlayer P {
+  font-family:Arial !important;
+}
+
+
+.pbullhead {
+    font-family:Arial !important;
+    color: #d52b1e;
+}
+
+.bullet{
+ font-family:Arial !important;
+}
+
+.playlist-item h5{
+font-family:Arial !important;
+    margin-left: 10px;
+}
+
+.list-items{
+font-family:Arial !important;
+}
+
+.dropdown-panel ol li{
+    font-family:Arial;
+}
+
+.dropdown-panel{
+font-family:Arial;
+}
+
+.frame_Question {
+    height: 475px;
+    position: absolute;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.question_btn{
+    width: 100px; margin-right: 25px; opacity: 1;border-radius:2px;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.428571429;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid #82786f;
+    border-radius: 4px;
+    -webkit-user-select: none;
+        font-family: Arial;
+    background-color: #d52b1e;
+    color:#fff;
+
+}
+
+
+
+
+
+.lrning_act_div_left{
+    display: inline;
+    float: left;
+    /* margin-left: 24px; */
+    width: 289px;
+}
+
+.lrning_act_div_right{
+   display: inline;
+    float: right;
+    margin-right: 0px;
+    width: 266px;
+}
+
+
+.P_Radio{
+   
+}
+
+.P_radio_txt{
+    /* padding-left: 22px; */
+    font-size: 13px !important;
+    padding-top: -40px;
+    margin-top: -8px;
+        width: 217px;
+}
+
+@media (max-height: 750px) {
+    #wrap {
+             background-size: 120%;
+       }
+}
+
+@media (min-height: 750px) {
+     #wrap {
+             background-size: 120%;
+       }
+}
+
+#stickyContent {
+    position: absolute;
+    right: 0;
+    margin-top: 145px;
+}
+
+.transcript p {
+    font-size: 12px;
+}
+
+.slidecontent {
+    border: 2px solid rgba(244,211,168,0.8);
+}
+
+.modal-header{
+    background-color:#d52b1e;
+    color:#fff;
+           border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 16px 20px 16px;
+    font-size:20px;
+font-family: Arial;
+}
+
+.modal-body{font-family: Arial;}
+
+#disclaimer{text-align: justify;overflow-y: auto;}
+
+
+.test_class {
+    position: relative;
+    height: 487px;
+    margin-top: 26px;
+    margin-left: 4%;
+    margin-right: 3%;
+}
+
+
+.shadow_inner {
+    background-color: transparent !important;
+    background-image: url(../../img/options1.png);
+    background-repeat: no-repeat;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    width: 260px;
+    height: 60px;
+    overflow: hidden;
+    padding-right: 18px;
+    color: #000;
+    text-align: center;
+    line-height: 1em;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+
+.question_btn{
+    width: 100px; margin-right: 25px; opacity: 1;border-radius:2px;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.428571429;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid #82786f;
+    border-radius: 4px;
+    -webkit-user-select: none;
+        font-family: Arial;
+    background-color: #d52b1e;
+    color:#fff;
+
+}
+
+
+.radio_img_1 {
+    height: 60px;
+    height: 60px;
+    background-image: url(../../img/options.png);
+    background-repeat: no-repeat;
+    padding: 20px 159px 50px 24px;
+        margin-top: 10px;
+}
+
+.P_radio_txt {
+    font-size: 13px !important;
+    padding-top: 10px;
+    margin-top: -8px;
+    width: 217px;
+    color: #fff;
+}
+
+
+input[type=checkbox], input[type=radio] {
+    margin: 18px -34px 0;
+}
+
+.lrning_act_div_left {
+    display: inline;
+    float: left;
+    width: 289px;
+   margin-left: 24px;    
+}
+
+
+.lrning_act_div_right {
+    display: inline;
+    float: left;
+    margin-right: 0px;
+    width: 266px;
+     
+}
+
+
+.shadow_inner {
+    background-color: transparent !important;
+    background-image: url(../../img/options1.png);
+    background-repeat: no-repeat;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    width: 260px;
+    height: 60px;
+    overflow: hidden;
+    padding-right: 18px;
+    color: #fff;
+    text-align: center;
+    line-height: 1em;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+
+.shadow_outer {
+    background-color: transparent !important;
+    background-image: url(../../img/options.png);
+    background-repeat: no-repeat;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    width: 260px;
+    height: 60px;
+    overflow: hidden;
+    padding-right: 18px;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    line-height: 1em;
+}
+
+.P_radio_txt_1 {
+    font-size: 13px !important;
+      padding: 12px 20px 1px 1px;
+    margin-top: -8px;
+    width: 217px;
+    color: #fff;
+}
+
+
+.P_radio_txt_1a{  
+    font-size: 13px !important;
+    width: 500px;
+    margin-top: -47px;
+    margin-left: 45px;
+    color: #fff;
+}
+
+
+.P_radio_chkbox{
+    margin-top: 17px !important;
+    position: absolute;
+    left: 80px;
+}
+
+.btnPrePos_Test{
+        margin-top: 130px;
+    float: right;
+    margin-right: 36px;
+}
+
+
+.GlossaryData 
+{ 
+width:438px;
+}
+
+
+.learningframe{
+	width:622px !important;
+}
+
+
+#playlist 
+{
+-webkit-overflow-scrolling:touch;
+}
+
+
+#slide1ref
+{
+-webkit-overflow-scrolling:touch;
+}
+
+
+.GlossaryTitle 
+{
+-webkit-overflow-scrolling:touch;
+}

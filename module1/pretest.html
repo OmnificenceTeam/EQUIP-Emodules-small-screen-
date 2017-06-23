@@ -1,0 +1,553 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    <!-- Website Design By: www.happyworm.com -->
+    <title>
+        Pre Test
+    </title>
+
+    <!-- fonticon -->
+    <link type="text/css" rel="stylesheet" href="../common/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="../common/css/bootstrap-theme.min.css" />
+    <link type="text/css" rel="stylesheet" href="../common/css/font-awesome.css" />
+    <link type="text/css" rel="stylesheet" href="../common/css/animate.css" />
+    <link type="text/css" rel="stylesheet" href="../common/css/style.css" />
+    <link type="text/css" rel="stylesheet" href="../common/css/table.css" />
+    <link type="text/css" rel="stylesheet" href="../common/css/bluetable.css" />
+    <link type="text/css" rel="stylesheet" href="../common/css/dragndrop.css" />
+    <link type="text/css" rel="stylesheet" href="../common/css/sticky-footer.css" />
+    <link type="text/css" rel="stylesheet" href="../common/css/mbExtruder.css" />
+    <link type="text/css" rel="stylesheet" href="../common/css/simple-slider.css" />
+    <link type="text/css" rel="stylesheet" href="../common/css/simple-slider-volume.css" />
+    <link type="text/css" rel="stylesheet" href="../common/css/tipsy.css" />
+    <link type="text/css" rel="stylesheet" href="../common/css/hoverEx.css" />
+    <link type="text/css" rel="stylesheet" href="../common/css/jquery.dropdown.css" />
+    <link type="text/css" rel="stylesheet" href="../common/css/common.css" />
+    <link type="text/css" rel="stylesheet" href="../common/css/specific/style.css" />
+    
+    
+    <script type="text/javascript" src="../common/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../common/js/jquery-ui.js"></script>
+    <script type="text/javascript" src="../common/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../common/js/jquery.ui.touch-punch.js"></script>
+    <script type="text/javascript" src="../common/js/jquery.dropdown.js"></script>
+    <script type="text/javascript" src="../common/js/dragndrop.js"></script>
+    <script type="text/javascript" src="../common/js/simple-slider.js"></script>
+    <script type="text/javascript" src="../common/js/jquery.hoverIntent.min.js"></script>
+    <script type="text/javascript" src="../common/js/jquery.mb.flipText.js"></script>
+    <script type="text/javascript" src="../common/js/mbExtruder.js"></script>
+    <script type="text/javascript" src="../common/js/jquery.fittext.js"></script>
+    <script type="text/javascript" src="../common/js/jquery.lettering.js"></script>
+    <script type="text/javascript" src="../common/js/jquery.tipsy.js"></script>
+    <script type="text/javascript" src="../common/js/player/CoursePlayer.js"></script>
+    <script type="text/javascript" src="../common/js/player/timeTracker.js"></script>
+    <script type="text/javascript" src="../common/js/Omnificence.Tracker.js"></script>
+    <script type="text/javascript" src="../common/js/player/TrackerService.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="../common/js/custom.js"></script>
+    <script type="text/javascript" src="../common/js/scrom/SCORM_12_APIWrapper.js"></script>
+    <script type="text/javascript" src="../common/js/omnificence.animation.js"></script>
+
+</head>
+<body onload="initPreTest();" id="module1" style="font-family:Arial;">
+    <div class="loader"></div>
+    <div id="wrap" style="width: 888px; height: 640px">
+        <div class="" style="height: 75px;">
+            <div class="header-top"></div>
+            <div class="header-body">
+                <img src="../common/img/logo.png" class="logo" />
+                <div class="header-help">
+                    <h4 id="slideTitle" class="module-title" style="max-width: 68%;">Pre-module quiz</h4>
+                    <div id="head_right_side" style="float: right">
+                        <img class="headerleftbg" src="../common/img/headerCorBg.png" />
+                    </div>
+                </div>
+                <div id="dropdown-6" class="dropdown dropdown-tip dropdown-anchor-right has-icons">
+                    <div class="playlist-header" style="background-color: transparent;">
+                        <button type="button" class="header-close" onclick="onclickClosereference()" style="position: absolute; left: 455px;">Close</button>
+
+                        <div class="dropdown-panel" style="overflow-x: hidden; overflow-y: scroll; height: 450px; min-width: 500px; margin-left: 30px;">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <audio id="moduleAudio"></audio>
+
+        </div>
+
+        <div class="test_class">
+            <div class="slidecontent" style="width:99%;">
+                <div id="Question1" data-qid="0" class="frame_Question" style="display:none;">
+
+                    <div style="padding-left: 20px;    padding-top: 20px;">
+
+                        <p class="" id="" style="margin-left:20px;top:15px;font-size:18px;">1.	Which of the following statement about the corpus spongiosum is not true?</p>
+                        <br />
+
+                        <input type="hidden" id="Answer" value="6" qid="3" />
+                        <input type="hidden" id="AnswerText" value="Recurrent inability to achieve or maintain penile erection,Persistent inability to achieve erection,None of the above" />
+                        <input type="hidden" id="Percentage" value="25" />
+                        <input type="hidden" id="OptionCount" value="4" />
+                        <div class="lrning_act_div_left">
+                            <div id="1" class="bullptxt radio_img_1" style="padding: 0px 25px 10px 40px;">
+                                <input class="P_Radio" name="ratio1" onclick="onclickRadio_question(this)" value="1" type="checkbox" style="width: 2em; height: 1.25em; float: left;" />
+                                <p class="P_radio_txt_1" style="    padding-top: 20px;">It surrounds the urethra</p>
+                            </div>
+                            <div id="2" class="bullptxt radio_img_1" style="padding: 0px 25px 10px 40px;">
+                                <input class="P_Radio" name="ratio1" onclick="onclickRadio_question(this)" value="2" type="checkbox" style="width: 2em; height: 1.25em; float: left;" />
+                                <p class="P_radio_txt_1">It expands to form the glans penis at the distal end</p>
+                            </div>
+                        </div>
+                        <div class="lrning_act_div_right">
+                            <div id="4" class="bullptxt radio_img_1" style="padding: 0px 25px 10px 40px;">
+                                <input class="P_Radio" name="ratio1" onclick="onclickRadio_question(this)" value="6" type="checkbox" style="width: 2em; height: 1.25em; float: left;" />
+                                <p class="P_radio_txt_1">It forms most of the body of the penis</p>
+                            </div>
+                            <div id="5" class="bullptxt radio_img_1" style="padding: 0px 25px 10px 40px;">
+                                <input class="P_Radio" name="ratio1" onclick="onclickRadio_question(this)" value="8" type="checkbox" style="width: 2em; height: 1.25em; float: left;" />
+                                <p class="P_radio_txt_1" style="">It gets engorged with blood during sexual excitation</p>
+                            </div>
+                        </div>
+
+                        <div style="" class="btnPrePos_Test">
+
+                            <div>
+                                <input id="button" qnumber="1" onclick="onclickAnswer_pretst(this)" type="button" class="question_btn" value="Continue" style="display:none;">
+                            </div>
+                            <br />
+                        </div>
+
+
+                    </div>
+                </div>
+                <div id="Question2" data-qid="1" class="frame_Question" style="display:none;">
+
+                    <div style="padding-left: 20px;    padding-top: 20px;">
+
+                        <p class="" id="" style="margin-left:20px;top:15px;font-size:18px;">2.	The deep cavernosal arteries which are located _______________ of the ____________________</p>
+                        <br />
+
+                        <input type="hidden" id="Answer" value="2" qid="1" />
+                        <input type="hidden" id="AnswerText" value="False" />
+                        <input type="hidden" id="Percentage" value="25" />
+                        <div class="lrning_act_div_left">
+                            <div id="1" class="bullptxt radio_img_1" style="padding: 0px 25px 10px 40px;">
+                                <input class="P_Radio" name="ratio1" onclick="onclickRadio_question(this)" value="1" type="checkbox" style="width: 2em; height: 1.25em; float: left;" />
+                                <p style="" class="P_radio_txt_1">In the groove between both; corpora cavernosa</p>
+                            </div>
+                            <div id="2" class="bullptxt radio_img_1" style="padding: 0px 25px 10px 40px;">
+                                <input class="P_Radio" name="ratio1" onclick="onclickRadio_question(this)" value="2" type="checkbox" style="width: 2em; height: 1.25em; float: left;" />
+                                <p class="P_radio_txt_1">In the centre of each; corpus cavernosum</p>
+                            </div>
+
+                        </div>
+                        <div class="lrning_act_div_right">
+                            <div id="4" class="bullptxt radio_img_1" style="padding: 0px 25px 10px 40px;">
+                                <input class="P_Radio" name="ratio1" onclick="onclickRadio_question(this)" value="6" type="checkbox" style="width: 2em; height: 1.25em; float: left;" />
+                                <p class="P_radio_txt_1" style="padding-top:19px;">In the centre; corpus spongiosum</p>
+                            </div>
+                            <div id="5" class="bullptxt radio_img_1" style="padding: 0px 25px 10px 40px;">
+                                <input class="P_Radio" name="ratio1" onclick="onclickRadio_question(this)" value="8" type="checkbox" style="width: 2em; height: 1.25em; float: left;" />
+                                <p class="P_radio_txt_1" style="">Overlying each; corpus cavernosum</p>
+                            </div>
+                        </div>
+
+                        <div style="margin-top:100px;" class="btnPrePos_Test">
+
+                            <div>
+                                <input id="button" qnumber="2" onclick="onclickAnswer_pretst(this)" type="button" class="question_btn" value="Continue" style="display:none;">
+                            </div>
+                            <br />
+                        </div>
+
+
+                    </div>
+                </div>
+                <div id="Question3" data-qid="2" class="frame_Question" style="display:none;">
+                    <div style="padding-left: 20px;    padding-top: 20px;">
+                        <p class="" id="" style="margin-left:20px;top:15px;font-size:18px;">3.	Which of the following statements is correct?</p>
+                        <br />
+                        <input type="hidden" id="Answer" value="2" qid="1" />
+                        <input type="hidden" id="AnswerText" value="False" />
+                        <input type="hidden" id="Percentage" value="25" />
+                        <div style="margin-left:18px;">
+                            <div id="" class="bullptxt " style="">
+                                <img src="../common/img/options.png" style="width:576px;height:60px;" />
+                                <input class="P_Radio P_radio_chkbox" name="ratio1" onclick="onclickRadio_question(this)" value="1" type="checkbox" style="width: 2em; height: 1.25em; float: left;" />
+                                <p class="P_radio_txt_1a" style="">The arteries in the corpora cavernosa are uncoiled in the relaxed state and become tortuous during excitation</p>
+                            </div>
+                            <div id="" class="bullptxt " style="">
+                                <img src="../common/img/options.png" style="width:576px;height:60px;" />
+                                <input class="P_Radio P_radio_chkbox" name="ratio1" onclick="onclickRadio_question(this)" value="2" type="checkbox" style="width: 2em; height: 1.25em; float: left;" />
+                                <p class="P_radio_txt_1a" style="">The arteries in the corpora cavernosa are coiled in the relaxed state and get uncoiled in the excited state resulting in rapid flow of blood in to cavernosal spaces</p>
+                            </div>
+                            <div id="" class="bullptxt " style="">
+                                <img src="../common/img/options.png" style="width:576px;height:60px;" />
+                                <input class="P_Radio P_radio_chkbox" name="ratio1" onclick="onclickRadio_question(this)" value="6" type="checkbox" style="width: 2em; height: 1.25em; float: left;" />
+                                <p class="P_radio_txt_1a" style="padding-top:6px;">None of the above</p>
+                            </div>
+                        </div>
+
+
+
+                        <div style="margin-top:86px;" class="btnPrePos_Test">
+
+                            <div>
+                                <input id="button" qnumber="3" onclick="onclickAnswer_pretst(this)" type="button" class="question_btn" value="Continue" style="display:none;">
+                            </div>
+                            <br />
+                        </div>
+
+
+                    </div>
+                </div>
+                <div id="Question4" data-qid="3" class="frame_Question" style="display:none;width:73%;">
+
+                    <div style="margin-left:25px;    margin-top: 20px;">
+                        <div style="height: 112px;display: table-cell;vertical-align: middle;">
+                            <p>
+                                4. Match the statements in column A with the most appropriate phrases in column B<br />
+                                <span style="color:red;font-weight:bold;font-size:13px;"><sup>*</sup>Please drag the answers to the appropriate positions</span>
+                            </p>
+
+                        </div>
+                        <div>
+
+                            <div style="float:left;width:66%;margin-top:-15px;">
+
+                                <div class="match-ans" style="text-align:center;    display: inline; ">
+
+                                    <span style="color:black;position:relative;top:15px;">In the detumescent phase there is</span>
+                                    <br />
+                                    <br />
+                                    <span style="color:black;position:relative;top:25px;">Due to arterial and cavernosal <br />smooth muscle relaxation there is</span>
+                                    <br />
+                                    <br />
+
+                                    <span style="color:black;position:relative;top:40px;">As penile erection develops there is </span>
+                                    <br />
+                                    <br />
+
+                                    <span style="color:black;position:relative;top:60px;">Penile erection is enhanced by</span>
+                                    <br />
+                                    <br />
+
+
+                                </div>
+                                <div style="float:right;margin-top:-186px;margin-right:-110px;">
+                                    <div style="padding:1px;"><div class="droppable_match droppable shadow_inner" id="q1" style=""></div></div>
+                                    <div style="padding:1px;"><div class="droppable_match droppable shadow_inner" id="q2" style=""></div></div>
+                                    <div style="padding:1px;"><div class="droppable_match droppable shadow_inner" id="q3" style=""></div></div>
+                                    <div style="padding:1px;"><div class="droppable_match droppable shadow_inner" id="q4" style=""></div></div>
+                                </div>
+                            </div>
+                            <div style="float:right;margin-right:-200px;margin-top:-25px;">
+                                <div style="padding:1px;">
+                                    <div class="draggable_match draggable shadow_outer" data-marks="3" data-ans="q2" id="a1" style="">20 – 40 fold increase in the blood flow to the penis</div>
+                                </div>
+                                <div style="padding:1px;">
+                                    <div class="draggable_match draggable shadow_outer" data-marks="2" data-ans="q4" id="a2" style="">the contraction of the muscles at the root of the penis</div>
+                                </div>
+                                <div style="padding:1px;">
+                                    <div class="draggable_match draggable shadow_outer" data-marks="3" data-ans="q1" id="a3" style="">little blood flow to the penis</div>
+                                </div>
+                                <div style="padding:1px;">
+                                    <div class="draggable_match draggable shadow_outer" data-marks="2" data-ans="q3" id="a4" style="">pressure on the surface of the corpora near the tunica albuginea increases</div>
+                                </div>
+                            </div>
+
+                        </div>                      
+                    </div>
+                    <div style="margin-top:200px;position:absolute;right:-216px;">
+                        <div>
+                            <input id="button" qnumber="4" onclick="onclickposttestAnswerContinue();" type="button" class="question_btn" value="Continue" style="display:none;margin-top:40px;">
+                        </div>
+                    </div>
+                </div>
+                <div id="Question5" data-qid="4" class="frame_Question" style="display:none;">
+                    <div style="padding-left: 20px;    padding-top: 20px;">
+                        <p class="" id="" style="margin-left:20px;top:15px;font-size:18px;">5.	Stimulus by visual touch is necessary to initiate _____________ erections</p>
+                        <br />
+                        <input type="hidden" id="Answer" value="4" qid="1" />
+                        <input type="hidden" id="AnswerText" value="Arterial dilatation and venous occlusion" />
+                        <input type="hidden" id="Percentage" value="25" />
+                        <div class="lrning_act_div_left">
+                            <div id="" class="bullptxt radio_img_1" style="padding: 0px 25px 10px 40px;">
+                                <input class="P_Radio" name="ratio1" onclick="onclickRadio_question(this)" value="1" type="checkbox" style="width: 2em; height: 1.25em; float: left;" />
+                                <p class="P_radio_txt_1" style="padding-top:20px;">Psychogenic</p>
+                            </div>
+                            <div id="" class="bullptxt radio_img_1" style="padding: 0px 25px 10px 40px;">
+                                <input class="P_Radio" name="ratio1" onclick="onclickRadio_question(this)" value="2" type="checkbox" style="width: 2em; height: 1.25em; float: left;" />
+                                <p class="P_radio_txt_1" style="padding-top:20px;">Reflexogenic</p>
+                            </div>
+
+                        </div>
+                        <div class="lrning_act_div_right">
+                            <div id="" class="bullptxt radio_img_1" style="padding: 0px 25px 10px 40px;">
+                                <input class="P_Radio" name="ratio1" onclick="onclickRadio_question(this)" value="4" type="checkbox" style="width: 2em; height: 1.25em; float: left;" />
+                                <p class="P_radio_txt_1" style="padding-top:20px;">Psychogenic and reflexogenic</p>
+                            </div>
+                            <div id="" class="bullptxt radio_img_1" style="padding: 0px 25px 10px 40px;">
+                                <input class="P_Radio" name="ratio1" onclick="onclickRadio_question(this)" value="5" type="checkbox" style="width: 2em; height: 1.25em; float: left;" />
+                                <p class="P_radio_txt_1" style="padding-top:20px;">Sleep</p>
+                            </div>
+                        </div>
+                        <div style="" class="btnPrePos_Test">
+
+                            <div>
+                                <input id="button" qnumber="5" onclick="onclickAnswer_pretst(this)" type="button" class="question_btn" value="Continue" style="display:none;">
+                            </div>
+                            <br />
+                        </div>
+
+
+                    </div>
+                </div>
+                <div id="Question6" data-qid="5" class="frame_Question" style="display:none;">
+                    <div style="padding-left: 20px;    padding-top: 20px;">
+                        <p class="" id="" style="margin-left:20px;top:15px;font-size:18px;">6. Which of the following is not true about sleep erections</p>
+                        <br />
+                        <input type="hidden" id="Answer" value="8" qid="3" />
+                        <input type="hidden" id="AnswerText" value="Recurrent inability to achieve or maintain penile erection,Persistent inability to achieve erection,None of the above" />
+                        <input type="hidden" id="Percentage" value="25" />
+                        <input type="hidden" id="OptionCount" value="3" />
+                        <div class="lrning_act_div_left">
+                            <div id="1" class="bullptxt radio_img_1" style="padding: 0px 25px 10px 40px;">
+                                <input class="P_Radio" name="ratio1" onclick="onclickRadio_question(this)" value="1" type="checkbox" style="width: 2em; height: 1.25em; float: left;" />
+                                <p style="" class="P_radio_txt_1">They occur in 95% of rapid eye movement sleep</p>
+                            </div>
+                            <div id="2" class="bullptxt radio_img_1" style="padding: 0px 25px 10px 40px;">
+                                <input class="P_Radio" name="ratio1" onclick="onclickRadio_question(this)" value="2" type="checkbox" style="width: 2em; height: 1.25em; float: left;" />
+                                <p class="P_radio_txt_1">They occur on an average of 3 to 5 times per night</p>
+                            </div>
+                        </div>
+                        <div class="lrning_act_div_right">
+                            <div id="4" class="bullptxt radio_img_1" style="padding: 0px 25px 10px 40px;">
+                                <input class="P_Radio" name="ratio1" onclick="onclickRadio_question(this)" value="6" type="checkbox" style="width: 2em; height: 1.25em; float: left;" />
+                                <p class="P_radio_txt_1">They may last from 30 minutes to 60 minutes per episode</p>
+                            </div>
+                            <div id="5" class="bullptxt radio_img_1" style="padding: 0px 25px 10px 40px;">
+                                <input class="P_Radio" name="ratio1" onclick="onclickRadio_question(this)" value="8" type="checkbox" style="width: 2em; height: 1.25em; float: left;" />
+                                <p class="P_radio_txt_1" style="padding-top:20px;">None of the above</p>
+                            </div>
+                        </div>
+                        <div style="" class="btnPrePos_Test">
+                            <div>
+                                <input id="button" qnumber="6" onclick="onclickAnswer_pretst(this)" type="button" class="question_btn" value="Continue" style="display:none;">
+                            </div>
+                            <br />
+                        </div>
+                    </div>
+                </div>
+                <div id="Question7" data-qid="6" class="frame_Question" style="display:none;">
+                    <div style="padding-left: 20px;    padding-top: 20px;">
+                        <p class="" id="" style="margin-left:20px;top:15px;font-size:18px;">7. The predominant type of phosphodiesterase (PDE) in penile tissues is</p>
+                        <br />
+                        <input type="hidden" id="Answer" value="6" qid="3" />
+                        <input type="hidden" id="AnswerText" value="Recurrent inability to achieve or maintain penile erection,Persistent inability to achieve erection,None of the above" />
+                        <input type="hidden" id="Percentage" value="25" />
+                        <input type="hidden" id="OptionCount" value="3" />
+                        <div class="lrning_act_div_left">
+                            <div id="1" class="bullptxt radio_img_1" style="padding: 0px 25px 10px 40px;">
+                                <input class="P_Radio" name="ratio1" onclick="onclickRadio_question(this)" value="1" type="checkbox" style="width: 2em; height: 1.25em; float: left;" />
+                                <p style="padding-top: 20px;" class="P_radio_txt_1">PDE1</p>
+                            </div>
+                            <div id="2" class="bullptxt radio_img_1" style="padding: 0px 25px 10px 40px;">
+                                <input class="P_Radio" name="ratio1" onclick="onclickRadio_question(this)" value="2" type="checkbox" style="width: 2em; height: 1.25em; float: left;" />
+                                <p style="padding-top: 20px;" class="P_radio_txt_1">PDE3</p>
+                            </div>
+                        </div>
+                        <div class="lrning_act_div_right">
+                            <div id="4" class="bullptxt radio_img_1" style="padding: 0px 25px 10px 40px;">
+                                <input class="P_Radio" name="ratio1" onclick="onclickRadio_question(this)" value="6" type="checkbox" style="width: 2em; height: 1.25em; float: left;" />
+                                <p style="padding-top: 20px;" class="P_radio_txt_1">PDE5</p>
+                            </div>
+                            <div id="5" class="bullptxt radio_img_1" style="padding: 0px 25px 10px 40px;">
+                                <input class="P_Radio" name="ratio1" onclick="onclickRadio_question(this)" value="8" type="checkbox" style="width: 2em; height: 1.25em; float: left;" />
+                                <p style="padding-top: 20px;" class="P_radio_txt_1">PDE7</p>
+                            </div>
+                        </div>
+                        <div style="" class="btnPrePos_Test">
+                            <div>
+                                <input id="button" qnumber="7" onclick="onclickAnswer_pretst(this)" type="button" class="question_btn" value="Continue" style="display:none;">
+                            </div>
+                            <br />
+                        </div>
+
+
+                    </div>
+                </div>
+                <div id="Question8" data-qid="7" class="frame_Question" style="display:none;">
+                    <div style="padding-left: 20px;    padding-top: 20px;">
+                        <p class="" id="" style="margin-left:20px;top:15px;font-size:18px;">8. The most type of erectile dysfunction (ED) is</p>
+                        <br />
+                        <input type="hidden" id="Answer" value="2" qid="3" />
+                        <input type="hidden" id="AnswerText" value="Recurrent inability to achieve or maintain penile erection,Persistent inability to achieve erection,None of the above" />
+                        <input type="hidden" id="Percentage" value="25" />
+                        <input type="hidden" id="OptionCount" value="3" />
+                        <div class="lrning_act_div_left">
+                            <div id="1" class="bullptxt radio_img_1" style="padding: 0px 25px 10px 40px;">
+                                <input class="P_Radio" name="ratio1" onclick="onclickRadio_question(this)" value="1" type="checkbox" style="width: 2em; height: 1.25em; float: left;" />
+                                <p style="padding-top: 20px;" class="P_radio_txt_1">Psychogenic</p>
+                            </div>
+                            <div id="2" class="bullptxt radio_img_1" style="padding: 0px 25px 10px 40px;">
+                                <input class="P_Radio" name="ratio1" onclick="onclickRadio_question(this)" value="2" type="checkbox" style="width: 2em; height: 1.25em; float: left;" />
+                                <p style="padding-top: 20px;" class="P_radio_txt_1">Vasculogenic</p>
+                            </div>
+
+                        </div>
+                        <div class="lrning_act_div_right">
+                            <div id="4" class="bullptxt radio_img_1" style="padding: 0px 25px 10px 40px;">
+                                <input class="P_Radio" name="ratio1" onclick="onclickRadio_question(this)" value="6" type="checkbox" style="width: 2em; height: 1.25em; float: left;" />
+                                <p style="padding-top: 20px;" class="P_radio_txt_1">Neurogenic</p>
+                            </div>
+                            <div id="5" class="bullptxt radio_img_1" style="padding: 0px 25px 10px 40px;">
+                                <input class="P_Radio" name="ratio1" onclick="onclickRadio_question(this)" value="8" type="checkbox" style="width: 2em; height: 1.25em; float: left;" />
+                                <p style="padding-top: 20px;" class="P_radio_txt_1">Endocrinological</p>
+                            </div>
+                        </div>
+
+                        <div style="" class="btnPrePos_Test">
+
+                            <div>
+                                <input id="button" qnumber="8" onclick="onclickAnswer_pretst(this)" type="button" class="question_btn" value="Continue" style="display:none;">
+                            </div>
+                            <br />
+                        </div>
+
+
+                    </div>
+                </div>
+                <div id="Question9" data-qid="8" class="frame_Question" style="display:none;">
+                    <div style="padding-left: 20px;    padding-top: 20px;">
+                        <p class="" id="" style="margin-left:20px;top:15px;font-size:18px;">9. Vascular, neurologic and endocrinological ED with an occasional psychogenic component may be more common in</p>
+                        <br />
+                        <input type="hidden" id="Answer" value="1" qid="3" />
+                        <input type="hidden" id="AnswerText" value="Recurrent inability to achieve or maintain penile erection,Persistent inability to achieve erection,None of the above" />
+                        <input type="hidden" id="Percentage" value="25" />
+                        <input type="hidden" id="OptionCount" value="3" />
+                        <div class="lrning_act_div_left">
+                            <div id="1" class="bullptxt radio_img_1" style="padding: 0px 25px 10px 40px;">
+                                <input class="P_Radio" name="ratio1" onclick="onclickRadio_question(this)" value="1" type="checkbox" style="width: 2em; height: 1.25em; float: left;" />
+                                <p class="P_radio_txt_1" style="padding-top:20px;">Men over 40 years of age</p>
+                            </div>
+                            <div id="2" class="bullptxt radio_img_1" style="padding: 0px 25px 10px 40px;">
+                                <input class="P_Radio" name="ratio1" onclick="onclickRadio_question(this)" value="2" type="checkbox" style="width: 2em; height: 1.25em; float: left;" />
+                                <p class="P_radio_txt_1" style="padding-top:20px;">Men under 40 years of age</p>
+                            </div>
+                        </div>
+                        <div class="lrning_act_div_right">
+                            <div id="4" class="bullptxt radio_img_1" style="padding: 0px 25px 10px 40px;">
+                                <input class="P_Radio" name="ratio1" onclick="onclickRadio_question(this)" value="6" type="checkbox" style="width: 2em; height: 1.25em; float: left;" />
+                                <p class="P_radio_txt_1" style="padding-top:20px;">Men of all age groups</p>
+                            </div>
+                        </div>
+                        <div style="margin-top:164px;" class="btnPrePos_Test">
+                            <div>
+                                <input id="button" qnumber="9" onclick="onclickAnswer_pretst(this)" type="button" class="question_btn" value="Continue" style="display:none;">
+                            </div>
+                            <br />
+                        </div>
+                    </div>
+                </div>
+                <div id="Question10" data-qid="9" class="frame_Question" style="display:none;">
+                    <div style="padding-left: 20px;    padding-top: 20px;">
+                        <p class="" id="" style="margin-left:20px;top:15px;font-size:18px;">10. The two most common vascular disorders causing ED include focal occlusion of the penile artery and _______</p>
+                        <br />
+                        <input type="hidden" id="Answer" value="1" qid="3" />
+                        <input type="hidden" id="AnswerText" value="Recurrent inability to achieve or maintain penile erection,Persistent inability to achieve erection,None of the above" />
+                        <input type="hidden" id="Percentage" value="25" />
+                        <input type="hidden" id="OptionCount" value="3" />
+                        <div class="lrning_act_div_left">
+                            <div id="1" class="bullptxt radio_img_1" style="padding: 0px 25px 10px 40px;">
+                                <input class="P_Radio" name="ratio1" onclick="onclickRadio_question(this)" value="1" type="checkbox" style="width: 2em; height: 1.25em; float: left;" />
+                                <p style="    padding-top: 20px;" class="P_radio_txt_1">Peyronie’s disease</p>
+                            </div>
+                            <div id="2" class="bullptxt radio_img_1" style="padding: 0px 25px 10px 40px;">
+                                <input class="P_Radio" name="ratio1" onclick="onclickRadio_question(this)" value="2" type="checkbox" style="width: 2em; height: 1.25em; float: left;" />
+                                <p class="P_radio_txt_1" style="    padding-top: 20px;">Bicycling induced perineal trauma</p>
+                            </div>
+                        </div>
+                        <div class="lrning_act_div_right">
+                            <div id="4" class="bullptxt radio_img_1" style="padding: 0px 25px 10px 40px;">
+                                <input class="P_Radio" name="ratio1" onclick="onclickRadio_question(this)" value="6" type="checkbox" style="width: 2em; height: 1.25em; float: left;" />
+                                <p class="P_radio_txt_1" style="    padding-top: 20px;">Veno-occlusive disease</p>
+                            </div>
+                            <div id="5" class="bullptxt radio_img_1" style="padding: 0px 25px 10px 40px;">
+                                <input class="P_Radio" name="ratio1" onclick="onclickRadio_question(this)" value="8" type="checkbox" style="width: 2em; height: 1.25em; float: left;" />
+                                <p class="P_radio_txt_1" style="    padding-top: 20px;">Blunt perineal trauma</p>
+                            </div>
+                        </div>
+                        <div style="    margin-top:104px;" class="btnPrePos_Test">
+                            <div>
+                                <input id="button" qnumber="10" onclick="onclickAnswer_pretst(this)" type="button" class="question_btn" value="Finish" style="display:none;">
+                            </div>
+                            <br />
+                        </div>
+                    </div>
+                </div>
+                <div id="pretest_score" class="frame_Question" style="display:none;">
+                    <div class="playBody">
+                        <div style="text-align: center; margin: -30px auto; margin-left: 110px;">
+                            <p class="breakout" style="width:590px; font-size: 20px; position: relative; left:-40px;text-align: left;    padding-left: 15px;">
+                                <span id="total_result"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <!--<input id="close_button" onclick="onclick_finish();" type="button" class="btn btn-primary" value="Close" style="width: 100px; margin-right: 25px; display: none;position: relative;top: 74px;    left: 517px;" />-->
+
+                </div>
+            </div>
+        </div>
+
+        
+
+
+
+
+
+        <div id="footer" style="width: 880px; margin: 0 auto; position: absolute;padding-top: 14px;">
+            <div class="container" style="text-align:center;">
+                <table style="width: 100%">
+                    <tr>
+                        
+                        <td id="num_footer" style="color: white;">
+                            Question <span id="qqNumber">1 </span> of 10
+
+                        </td>
+                        
+                    </tr>
+
+                </table>
+
+                <!--  <img class="effect" src="../common/img/pauseBtn.png" style="float: left; margin-top: -10px;" onclick="pause()" />-->
+            </div>
+        </div>
+
+
+        <div class="modal"  id="AnswerModal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content" style="margin-top: 200px;">
+                    <div class="modal-body">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" onclick="onclickpretestAnswerContinue();" class="question_btn">Continue</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Easy Pie Chart -->
+    <script src="../common/js/chart/jquery.easy-pie-chart.js" cache="false"></script>
+   
+
+
+</body>
+
+</html>

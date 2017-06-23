@@ -1,0 +1,62 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <!-- Latest compiled and minified JavaScript -->
+    <script type="text/javascript" src="../common/js/jquery-1.9.1.js"></script>
+    <script src="../common/js/scrom/SCORM_12_APIWrapper.js"></script>
+    <script type="text/javascript">
+        function check() {
+            $(".loader").fadeOut("slow");
+            var ua = window.navigator.userAgent;
+            var msie = ua.indexOf("MSIE ");
+
+            if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)) {
+                document.getElementById("banner").style.display = "";
+            }
+            else {
+
+                window.location.href = "module.html";
+            }
+        }
+        function showModeless() {
+
+            window.showModelessDialog("module.html", g_scromManager, "dialogHeight:667px;dialogWidth:888px;");
+        }
+    </script>
+    <style>
+        .launchbut {
+            position: relative;
+            background-color: #d52b1e;
+            text-align: center;
+            border: 1px solid black;
+            color: wheat;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body style="overflow: hidden; margin: 0px auto;" onload="check()">
+    <div id="banner" style="background-image: url(../common/img/bg.png); width: 888px; height: 640px; display: none;">
+        <div style="background-color: #f6e9d1; height: 100px;">
+            <img src="../common/img/logo.png" style="position: relative; top: 10px; left: 10px;" />
+
+        </div>
+    <div style="text-align: center; height: 500px; margin: 0px auto; background-color: #d6d3cc;" id="banframe">
+        <p class="breakout" style="width: 500px; font-size: 20px; position: relative; left: 10px; top: 200px; background-color: transparent;">
+            Welcome to EQUIP LMS Training Module.
+            <br />
+            Click Launch course button to view course.
+        </p>
+        <input type="button" value="Launch Course" id="launchbutton" onclick="showModeless()" class="launchbut" style="top: 275px; left: 200px; height:30px;" />
+    </div>
+
+    </div>
+   
+</body>
+<script type="text/javascript">
+    
+
+</script>
+
+</html>

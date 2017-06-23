@@ -1,0 +1,1725 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=9;IE=10;IE=11;IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta charset="utf-8" />
+
+    <title>E Module</title>
+
+    <link type="text/css" rel="stylesheet" href="../common/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="../common/css/bootstrap-theme.min.css" />
+    <link type="text/css" rel="stylesheet" href="../common/css/font-awesome.css" />
+    <link type="text/css" rel="stylesheet" href="../common/css/animate.css" />
+    <link type="text/css" rel="stylesheet" href="../common/css/style.css" />
+    <link type="text/css" rel="stylesheet" href="../common/css/table.css" />
+    <link type="text/css" rel="stylesheet" href="../common/css/bluetable.css" />
+    <link type="text/css" rel="stylesheet" href="../common/css/dragndrop.css" />
+    <link type="text/css" rel="stylesheet" href="../common/css/sticky-footer.css" />
+    <link type="text/css" rel="stylesheet" href="../common/css/mbExtruder.css" />
+    <link type="text/css" rel="stylesheet" href="../common/css/simple-slider.css" />
+    <link type="text/css" rel="stylesheet" href="../common/css/simple-slider-volume.css" />
+    <link type="text/css" rel="stylesheet" href="../common/css/tipsy.css" />
+    <link type="text/css" rel="stylesheet" href="../common/css/hoverEx.css" />
+    <link type="text/css" rel="stylesheet" href="../common/css/jquery.dropdown.css" />
+    <link type="text/css" rel="stylesheet" href="../common/css/common.css" />
+    <link type="text/css" rel="stylesheet" href="../common/css/specific/style.css" />
+    <link type="text/css" rel="stylesheet" href="css/module1.css" />
+
+    <script type="text/javascript" src="../common/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../common/js/jquery-ui.js"></script>
+    <script type="text/javascript" src="../common/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../common/js/jquery.dropdown.js"></script>
+    <script type="text/javascript" src="../common/js/dragndrop.js"></script>
+    <script type="text/javascript" src="../common/js/simple-slider.js"></script>
+    <script type="text/javascript" src="../common/js/jquery.hoverIntent.min.js"></script>
+    <script type="text/javascript" src="../common/js/jquery.mb.flipText.js"></script>
+    <script type="text/javascript" src="../common/js/mbExtruder.js"></script>
+    <script type="text/javascript" src="../common/js/jquery.fittext.js"></script>
+    <script type="text/javascript" src="../common/js/jquery.lettering.js"></script>
+    <script type="text/javascript" src="../common/js/jquery.tipsy.js"></script>
+    <script type="text/javascript" src="../common/js/player/CoursePlayer.js"></script>
+    <script type="text/javascript" src="../common/js/player/timeTracker.js"></script>
+    <script type="text/javascript" src="../common/js/Omnificence.Tracker.js"></script>
+    <script type="text/javascript" src="../common/js/player/TrackerService.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="../common/js/custom.js"></script>
+    <script type="text/javascript" src="../common/js/scrom/SCORM_12_APIWrapper.js"></script>
+    <script type="text/javascript" src="../common/js/omnificence.animation.js"></script>
+</head>
+<body onload="createAttempt();" id="module1">
+    <div class="loader"></div>
+    <div id="wrap" style="">
+	<div id="s2code" class="element" style="">
+                        <p style="font-size:10px; font-family: Arial;">CIATRG02201600392</p>
+                    </div>
+				
+        <div class="" style="height: 75px;">
+            <div class="header-top"></div>
+            <div class="header-body">
+                <img src="../common/img/logo.png" class="logo" />
+                <div class="header-help">
+                    <h4 id="slideTitle" class="module-title" style="max-width: 68%;"></h4>
+                    <div id="head_right_side" style="float: right">
+                        <img class="effect" onmouseover="HideToolTip(this)" onclick="onclickPlaylistImg()" data-toggle="tooltip" data-placement="left" title="Playlist" style="float: left;"
+                             src="../common/img/content.png" />
+                        <img class="effect" onmouseover="HideToolTip(this)" data-horizontal-offset="-10" data-dropdown="#dropdown-6" data-placement="bottom" title="Reference" style="float: left;" src="../common/img/smallicon1.png" />
+                        <img class="effect" onmouseover="HideToolTip(this)" onclick="onclickGlossaryImg()" data-toggle="tooltip" data-placement="customTooltip" title="Glossary" style="float: left;" src="../common/img/smallicon4.png" />
+                        <img class="headerleftbg" src="../common/img/headerCorBg.png" />
+                    </div>
+                </div>
+                <div id="dropdown-6" class="dropdown dropdown-tip dropdown-anchor-right has-icons">
+                    <div class="playlist-header" style="background-color: transparent;">
+                        <button type="button" class="header-close" onclick="onclickClosereference()" style="position: absolute; left: 455px;">Close</button>
+
+                        <div class="dropdown-panel" style="overflow-x: hidden; overflow-y: scroll; height: 450px; min-width: 500px; margin-left: 30px;">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <audio id="moduleAudio"></audio>
+
+        </div>
+
+        <div style="position: relative; height: 513px;">
+            <!--<div id="extruderLeft2" class="a {title:'Slides\'s', url:'parts/extruderLeft.html'}">
+                <div class="playlist" style="height: 615px;">
+                    <div class="playlist-header"></div>
+                    <div id="playlist" class="playlist-item">
+                        <div class="list-items">title <span>0:00</span></div>
+                    </div>
+                    <div class="playlist-footer">
+                        <p>Total Duration : <span id="totalDuration">00:00</span></p>
+                    </div>
+                </div>
+
+            </div>-->
+            <div class="slidePlayer">
+
+                <div id="PlayListDiv" style="display: none;">
+                    <div class="coursecontent" style="height: 525px; width: 100%; margin: 0px auto;">
+                        <div class="playlist-header">
+                            <button type="button" class="header-close" onclick="onclickClosePlaylist()" style="float: right;">Close</button>
+                        </div>
+                        <div id="playlist" class="playlist-item  style-5" style="overflow-y: auto;">
+                            <div class="list-items">title <span>0:00</span></div>
+                        </div>
+                        <div class="playlist-footer">
+                            <p>Total Duration : <span id="totalDuration">00:00</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="GlossaryDiv" style="display: none;">
+                    <div class="coursecontent" style="height: 525px; width: 94%; margin: 0px auto;">
+                        <div class="playlist-header">
+                            <button type="button" class="header-close" onclick="onclickCloseglossary()" style="float: right;">Close</button>
+                        </div>
+                        <div id="Div2" class="playlist-item  style-5">
+                            <div id="GlossaryTitle" class="GlossaryTitle style-5">
+                            </div>
+                            <div id="GlossaryData" class="GlossaryData style-5">
+                            </div>
+                        </div>
+                        <div class="playlist-footer">
+                        </div>
+                    </div>
+                </div>
+                <div id="slide1" style="display: none;">
+
+                    <!-- <div class="topic-bar">
+                <div id="topic-title">Title</div>
+            </div>-->
+                    <div id="slide0ref" style="display: none; height: 50px !important;" class="slide0ref">
+                        <b>No reference</b>
+                    </div>
+
+                    <div id="slide1ref" style="display: none;" class="slide1ref">
+                        <b>References:</b><br />
+                        <br />
+                        <ol>
+                            <li>
+                                Guyton AC, Hall JE.<i> Textbook of Medical Physiology</i>.; 2006. doi:10.1136/pgmj.51.599.683-c.
+                            </li>
+                            <li>
+                                Gordon M. Stem cells and haemopoiesis. In: Hoffbrand V, Catovsky D, Tuddenham E, eds.<i> Postgraduate Haematology</i>. 5th ed. Massachusetts: Blackwell Publishing; 2005:1-11.
+                            </li>
+                            <li>
+                                Diez-Silva M, Dao M, Han J, Lim C-T, Suresh S. Shape and Biomechanical Characteristics of Human Red Blood Cells in Health and Disease.<i> MRS Bull</i>. 2010;35(5):382-388. Available at: http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=2998922&tool=pmcentrez&rendertype=abstract. Accessed June 25, 2015.
+                            </li>
+                            <li>
+                                Barrett KE, Barman SM, Boitano S BH.<i> Ganong’s Review of Medical Physiology</i>. 23rd ed. The McGraw-Hill Companies, Inc.; 2010.
+                            </li>
+                            <li>
+                                Lodish H, Jacobsen M. Regulation of hemoglobin synthesis. Equal rates of translation and termination of α- and β-globin chains.<i> J. Biol. Chem</i>. 1972;247(11):3622-9. Available at: http://www.jbc.org/content/247/11/3622.abstract. Accessed March 23, 2015.
+                            </li>
+                            <li>
+                                Benz E. Disorders of Hemoglobin. In: Longo D, Fauci A, Kasper D, Hauser S, Jameson J, Loscalzo J, eds.<i> Harrison’s Principles of Internal Medicine</i>. 18th ed. The McGraw-Hill Companies, Inc.; 2012:852-861.
+                            </li>
+                            <li>
+                                Adamson A. Iron Deficiency and Other Hypoproliferative Anemias. In: Longo D, Fauci A, Kasper D, Hauser S, Jameson J, Loscalzo J, eds.<i> Harrison’s Principles of Internal Medicine</i>. 12th ed. McGraw Hill; 2012:844-851.
+                            </li>
+                            <li>
+                                Normal Iron Absorption and Storage.<i> Cent. Dis. Control Prev</i>. Available at: http://www.cdc.gov/ncbddd/hemochromatosis/training/pathophysiology/iron_cycle_popup.htm. Accessed April 15, 2015.
+                            </li>
+                            <li>
+                                Kumar V, Abbas A, Aster J, eds.<i> Robbin’s Basic Pathology</i>. 9th ed. Philadelphia: Elsevier Saunders; 2013.
+                            </li>
+                            <li>
+                                Waldvogel-Abramowski S, Waeber G, Gassner C, et al. Physiology of iron metabolism.<i> Transfus. Med. hemotherapy  Off</i>. Organ der Dtsch. Gesellschaft fur̈ Transfusionsmedizin und Immunham̈atologie 2014;41(3):213-21. doi:10.1159/000362888.
+                            </li>
+                            <li>
+                                Kapoor SA and RK. Iron Metabolism. 2012. doi:10.5772/39031.
+                            </li>
+                            <li>
+                                Andrews N. Disorders of iron metabolism.<i> N. Engl. J. Med</i>. 1999;341(26):1986-95. doi:10.1056/NEJM199912233412607.
+                            </li>
+                            <li>
+                                Patel M, Ramavataram DVSS. Non Transferrin Bound Iron: Nature, Manifestations and Analytical Approaches for Estimation.<i> Indian J. Clin. Biochem</i>. 2012;27(4):322-332. doi:10.1007/s12291-012-0250-7.
+                            </li>
+                            <li>
+                                Breuer W, Ronson A, Slotki IN, Abramov A, Hershko C, Cabantchik ZI. The assessment of serum nontransferrin-bound iron in chelation therapy and iron supplementation. Blood 2000;95(9):2975-82. Available at: http://www.ncbi.nlm.nih.gov/pubmed/10779448. Accessed June 25, 2015.
+                            </li>
+                            <li>
+                                Siddique A, Kowdley K V. Review article: the iron overload syndromes.<i> Aliment. Pharmacol</i>. Ther. 2012;35(8):876-93. doi:10.1111/j.1365-2036.2012.05051.x.
+                            </li>
+                            <li>
+                                Iron Chelation Therapy.<i> Aplastic Anemia MDS Int. Found</i>. 2011. Available at: http://www.aamds.org/node/82. Accessed June 29, 2015.
+                            </li>
+                            <li>
+                                Gao X, Campian JL, Qian M, Sun X-F, Eaton JW. Mitochondrial DNA damage in iron overload.<i> J. Biol. Chem</i>. 2009;284(8):4767-75. doi:10.1074/jbc.M806235200.
+                            </li>
+                            <li>
+                                Dimitriou E, Kairis M, Sarafidou J, Michelakakis H. Iron overload and kidney lysosomes.<i> Biochim. Biophys. Acta</i> 2000;1501(2-3):138-48. Available at: http://www.ncbi.nlm.nih.gov/pubmed/10838187. Accessed June 25, 2015.
+                            </li>
+                            <li>
+                                Olivieri NF, Brittenham GM. Iron-chelating therapy and the treatment of thalassemia.<i> Blood</i> 1997;89(3):739-61. Available at: http://www.ncbi.nlm.nih.gov/pubmed/9028304. Accessed June 25, 2015.
+                            </li>
+                            <li>
+                                Batts KP. Iron overload syndromes and the liver.<i> Mod. Pathol</i>. 2007;20 Suppl 1:S31-9. doi:10.1038/modpathol.3800715.
+                            </li>
+                            <li>
+                                Cappellini M-D, Cohen A, Eleftheriou A, Piga A, Porter J, Taher A. Iron Overload. 2008. Available at: http://www.ncbi.nlm.nih.gov/books/NBK173958/. Accessed June 26, 2015.
+                            </li>
+                            <li>
+                                Schaefer RM, Schaefer L. Iron monitoring and supplementation: how do we achieve the best results?<i> Nephrol. Dial. Transplant</i> 1998;13 Suppl 2:9-12. Available at: http://www.ncbi.nlm.nih.gov/pubmed/9566484. Accessed June 25, 2015.
+                            </li>
+                            <li>
+                                Angelucci E, Brittenham GM, McLaren CE, et al. Hepatic iron concentration and total body iron stores in thalassemia major.<i> N. Engl. J. Med</i>. 2000;343(5):327-31. doi:10.1056/NEJM200008033430503.
+                            </li>
+                            <li>
+                                Castruita M, Saito M, Schottel PC, et al. Overexpression and characterization of an iron storage and DNA-binding Dps protein from Trichodesmium erythraeum.<i> Appl. Environ. Microbiol</i>. 2006;72(4):2918-24. doi:10.1128/AEM.72.4.2918-2924.2006.
+                            </li>
+                            <li>
+                                Wood JC. Diagnosis and management of transfusion iron overload: The role of imaging.<i> Am. J. Hematol</i>. 2007;82(S12):1132-1135. doi:10.1002/ajh.21099.
+                            </li>
+                            <li>
+                                Brittenham GM, Badman DG. Noninvasive measurement of iron: report of an NIDDK workshop.<i> Blood</i> 2003;101(1):15-9. doi:10.1182/blood-2002-06-1723.
+                            </li>
+                            <li>
+                                Alústiza Echeverría JM, Castiella A, Emparanza JI. Quantification of iron concentration in the liver by MRI.<i> Insights Imaging</i> 2012;3(2):173-80. doi:10.1007/s13244-011-0132-1.
+                            </li>
+                            <li>
+                                Sirlin CB, Reeder SB. Magnetic resonance imaging quantification of liver iron.<i> Magn. Reson. Imaging Clin. N. Am</i>. 2010;18(3):359-81, ix. doi:10.1016/j.mric.2010.08.014.
+                            </li>
+                            <li>
+                                Kirk P, Roughton M, Porter JB, et al. Cardiac T2* magnetic resonance for prediction of cardiac complications in thalassemia major.<i> Circulation</i> 2009;120(20):1961-8. doi:10.1161/CIRCULATIONAHA.109.874487.
+                            </li>
+                        </ol>
+
+                    </div>
+
+
+                    <!--Body -->
+                    <div class="slidecontent">
+                        <div id="s1frame1" class="frame">
+                            <!---->
+
+
+                            <div class="playBody">
+                                <div style="" id="s1bimg1" class="element">
+                                    <p class="breakout" style="width: 500px; font-size: 20px; position: relative; left: 10px;">
+                                        Welcome to first module of the EQUIP e-learning program. <br />Anatomy and pathophysiology of erectile dysfunction (ED)
+
+                                    </p>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                  
+                    <div onclick="onclickShowTranscription(this);" id="stickyContent">
+                        <a href="#">
+                            <img id="sh_trn" src="../common/../common/img/showTrans.png" />
+                        </a>
+                    </div>
+                    <div id="transcript-hide" style="display: none;">
+                        <div class="transcript" style="">
+                            <p>
+                                Welcome to the first module of the EQUIP e-learning program. This program is intended to assist in maintaining skills, and enhance competencies for better outcomes in healthcare. This program is a continuing pharmacy education activity which focuses on the different aspects of erectile dysfunction and benign prostatic hyperplasia.
+                            </p>
+                            <p>This module describes the anatomy and pathophysiological concepts underlying erectile dysfunction (ED).</p>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--Disclaimer-->
+
+
+                <div id="slide_disclaimer" style="display: none;">
+
+
+                    <div class="slidecontent" style="">
+
+                        <div id="s2dframe1" class="frame">
+                            <div class="playBody">
+                                <div style="text-align: center;" id="s2bimg1" class="element">
+                                    <p class="breakout" style="width: 500px; font-size: 20px; position: relative; left: 10px;margin-top: 70px;">
+                                        This material is designed to be educational and non-promotional. It is offered so that the pharmacist receives accurate and important health information about the Lilly product so that the pharmacist can discuss with patients the medication consistent with the pharmacist’s professional responsibilities. By providing this information, Lilly in no way is encouraging the pharmacist to prescribe or dispense medicines without a prescription or as otherwise prohibited by law.
+
+                                    </p>
+                                </div>
+                            </div>
+                           
+
+                        </div>
+
+                    </div>
+                      <div onclick="onclickShowTranscription(this);" id="stickyContent">
+                        <a href="#">
+                            <img id="sh_trn" src="../common/../common/img/showTrans.png" />
+                        </a>
+                    </div>
+                    <div id="transcript-hide" style="display: none;">
+                        <div class="transcript" style="">
+                            <p>
+                                This material is designed to be educational and non-promotional. It is offered so that the pharmacist receives accurate and important health information about the Lilly product so that the pharmacist can discuss with patients the medication consistent with the pharmacist’s professional responsibilities. By providing this information, Lilly in no way is encouraging the pharmacist to prescribe or dispense medicines without a prescription or as otherwise prohibited by law.
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+
+
+                <div id="slide2" style="display: none;">
+
+
+                    <div class="slidecontent" style="">
+
+                        <div id="s2frame1" class="frame">
+                            <p id="s2txt1" class="pbullhead element">Upon completion of this module you should be able to: </p>
+                            <p id="s2txt2" class="bullet element">Understand the anatomy of penis</p>
+                            <p id="s2txt3" class="bullet element">Recognize the physiology of erection</p>
+                            <p id="s2txt4" class="bullet element">Define erectile dysfunction</p>
+                            <p id="s2txt5" class="bullet element">Explain the pathophysiology of erectile dysfunction</p>
+                            <p id="s2txt6" class="bullet element">Identify the risk factors for erectile dysfunction</p>
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!--<div onclick="onclickShowTranscription(this);" id="stickyContent" style="display: none; position: absolute; right: 0; margin-top: 184px;">
+                        <a href="#">
+                            <img src="../common/img/showTrans.png" class="showTrans" />
+                        </a>
+                    </div>
+                    <div id="transcript-hide" style="display: none;">
+                        <center> <button type="button" class="hidebutton" onclick="onclickHideTranscription(this);"> Hide Transcript</button></center>
+                        <div class="transcript" style="">
+                            <p>Upon completion of this module you should be able to:</p>
+                            <ul style="">
+                                <li><span>Understand the anatomy of penis</span></li>
+                                <li><span>Recognize the physiology of erection</span></li>
+                                <li><span>Define erectile dysfunction</span></li>
+                                <li><span>Explain the pathophysiology of erectile dysfunction</span></li>
+                                <li><span>Identify the risk factors for erectile dysfunction</span></li>
+                            </ul>
+                        </div>
+                    </div>-->
+                    <div onclick="onclickShowTranscription(this);" id="stickyContent">
+                        <a href="#">
+                            <img id="sh_trn" src="../common/../common/img/showTrans.png" />
+                        </a>
+                    </div>
+                    <div id="transcript-hide" style="display: none;">
+                        <div class="transcript" style="">
+                            <p>Upon completion of this module you should be able to:</p>
+                            <ul style="">
+                                <li><span>Understand the anatomy of penis</span></li>
+                                <li><span>Recognize the physiology of erection</span></li>
+                                <li><span>Define erectile dysfunction</span></li>
+                                <li><span>Explain the pathophysiology of erectile dysfunction</span></li>
+                                <li><span>Identify the risk factors for erectile dysfunction</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="slide3" style="display: none;">
+                    <!--Body -->
+                    <!--<div class="topic-bar">
+               <div id="topic-title">HL: Disease Description</div>
+            </div>-->
+
+                    <div class="slidecontent" style="">
+                        <div id="s3frame1" class="frame">
+                         
+                            <div id="s3img_div">
+                                <img id="s3img2" class="element" src="img/frame4_img2.png" />
+                                <img id="s3img3" class="element" src="img/frame4_img3.png" />
+                                <img id="s3img4" class="element" src="img/frame4_img4.png" />
+                                <img id="s3img5" class="element" src="img/frame4_img5.png" />
+                            </div>
+                        </div>
+                    </div>
+                    <!--Transcript-->
+                    <!--<div onclick="onclickShowTranscription(this);" id="stickyContent">
+                        <a href="#">
+                            <img src="../common/../common/img/showTrans.png" class="showTrans" />
+                        </a>
+                    </div>
+                    <div id="transcript-hide" style="display: none;">
+                        <center> <button type="button" class="hidebutton" onclick="onclickHideTranscription(this);"> Hide Transcript</button></center>
+                        <div class="transcript" style="">
+                            <p>
+                                Erectile dysfunction (ED) is a complex sexual arousal disorder in men.<sup>1</sup> It is defined as persistent or recurrent inability to achieve or maintain penile erection that is sufficient for satisfactory sexual performance. A diagnosis of ED is established if the duration of symptoms continues for a period of 3 months except in the case of trauma or surgically-induced ED.<sup>1,2</sup>
+                            </p>
+                            <p>
+                                Even though ED is not considered a life-threatening condition it has a significant effect on quality of life of patients and their partners. It is also closely associated with several other conditions.
+                            </p>
+                            <p>A critical understanding of the anatomy of the penis and the physiological mechanisms underlying erection is essential to provide a clear perspective of erectile dysfunction.</p>
+
+                        </div>
+                    </div>-->
+                    <div onclick="onclickShowTranscription(this);" id="stickyContent">
+                        <a href="#">
+                            <img id="sh_trn" src="../common/../common/img/showTrans.png" />
+                        </a>
+                    </div>
+                    <div id="transcript-hide" style="display: none;">
+                        <div class="transcript" style="">
+                            <p>
+                                Erectile dysfunction (ED) is a complex sexual arousal disorder in men.<sup>1</sup> It is defined as persistent or recurrent inability to achieve or maintain penile erection that is sufficient for satisfactory sexual performance. A diagnosis of ED is established if the duration of symptoms continues for a period of 3 months except in the case of trauma or surgically-induced ED.<sup>1,2</sup>
+                            </p>
+                            <p>
+                                Even though ED is not considered a life-threatening condition it has a significant effect on quality of life of patients and their partners. It is also closely associated with several other conditions.<sup>3</sup>
+                            </p>
+                            <p>A critical understanding of the anatomy of the penis and the physiological mechanisms underlying erection is essential to provide a clear perspective of erectile dysfunction.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <!--end-->
+                <div id="slide3a" style="display: none;">
+                    <!--Body -->
+                    <!--<div class="topic-bar">
+               <div id="topic-title">HL: Disease Description</div>
+            </div>-->
+
+                    <div class="slidecontent" style="">
+                        <div id="s3aframe1" class="frame">
+                            <img id="s3aimg1" class="fixed element" src="img/frame1_img1.png" style="" />
+                            <img id="s3aimg2" class="fixed element" src="img/frame1_img2.png" style="    " />
+                            <img id="s3aimg3" class="fixed element" src="img/frame1_img4.png" style="   " />
+                            <img id="s3aimg4" class="fixed element" src="img/frame1_img5.png" style="" />
+                            <img id="s3aimg5" class="fixed element" src="img/frame1_img3.png" style="    " />
+                            <img id="s3aimg6" class="fixed element" src="img/frame1_img6.png" style="    " />
+                            <img id="s3aimg7" class="fixed element" src="img/frame1_img7.png" style="" />
+                            <img id="s3aimg8" class="fixed element" src="img/frame1_img8.png" style="" />
+                            <img id="s3aimg9" class="fixed element" src="img/frame1_img9.png" style="" />
+                            <img id="s3aimg10" class="fixed element" src="img/frame1_img10.png" style="" />
+                            <img id="s3aimg11" class="fixed element" src="img/frame1_img3.png" style="    " />
+
+                        </div>
+                        <div id="s3aframe2" class="frame"  >
+                            <img id="s3aimg12" class="element" src="img/frame5c_img.png" style="" />
+                            <img id="s3aimg13" class="element" src="img/frame5c_img1.png" style="" />
+                            <img id="s3aimg14" class="element" src="img/frame5c_img2.png" style="" />
+
+                        </div>
+
+
+
+                    </div>
+                    <!--Transcript-->
+                    <!--<div onclick="onclickShowTranscription(this);" id="stickyContent">
+                        <a href="#">
+                            <img src="../common/../common/img/showTrans.png" class="showTrans" />
+                        </a>
+                    </div>
+                    <div id="transcript-hide" style="display: none;">
+                        <center> <button type="button" class="hidebutton" onclick="onclickHideTranscription(this);"> Hide Transcript</button></center>
+                        <div class="transcript" style="">
+                            <p>
+                                The penis consists of the root, which is attached to the perineum, and the body. The tip of the penis is called the glans penis. The body of the penis is comprised of 3 masses of erectile tissue, the right corpus cavernosum, the left corpus cavernosum and the corpus spongiosum. The corpora cavernosa form most of the body of the penis and are enveloped by the tunica albuginea. The corpus spongiosum is also cylindrical erectile tissue which surrounds the urethra and is expanded at the end to form the glans. These structures get engorged with blood during sexual excitement.
+                            </p>
+                            <p>Each of the corpora cavernosa consist of several sinusoids which are larger in the centre and smaller in the periphery.  The sinusoids are interconnected and are partially separated by trabeculae. </p>
+                        </div>
+                    </div>-->
+                    <div onclick="onclickShowTranscription(this);" id="stickyContent">
+                        <a href="#">
+                            <img id="sh_trn" src="../common/../common/img/showTrans.png" />
+                        </a>
+                    </div>
+                    <div id="transcript-hide" style="display: none;">
+                        <div class="transcript" style="">
+                            <p>
+                                The penis consists of the root, which is attached to the perineum, and the body. The tip of the penis is called the glans penis. The body of the penis is comprised of 3 masses of erectile tissue, the right corpus cavernosum, the left corpus cavernosum and the corpus spongiosum. The corpora cavernosa form most of the body of the penis and are enveloped by the tunica albuginea. The corpus spongiosum is also cylindrical erectile tissue which surrounds the urethra and is expanded at the end to form the glans. These structures get engorged with blood during sexual excitement.<sup>4</sup>
+                            </p>
+                            <p>Each of the corpora cavernosa consist of several sinusoids which are larger in the centre and smaller in the periphery.  The sinusoids are interconnected and are partially separated by trabeculae.<sup>5</sup> </p>
+                        </div>
+                    </div>
+                </div>
+                <!--slide 4 starting-->
+                <div id="slide4" style="display: none;">
+                    <!--Body
+            <!--<div class="topic-bar">
+                <div id="topic-title">Deterioration of lung function</div>
+             </div>-->
+                    <div class="slidecontent" style="">
+                        <div id="s4frame1" class="frame" style="">
+                          
+                            <img id="s4img1" class="fixed element" src="img/frame6a_img1.png" style="" />
+                            <img id="s4img2" class="fixed element" src="img/frame6a_img2.png" style="" />
+                            <img id="s4img3" class="fixed element" src="img/frame6a_img3.png" style="" />
+                            <img id="s4img4" class="fixed element" src="img/frame6a_img4.png" style="" />
+                            <img id="s4img5" class="fixed element" src="img/frame6a_img5.png" style="" />
+                          
+                        </div>
+                        <div id="s4frame2" class="frame">
+                           
+                            <img id="s4img7" class="element" src="img/frame6_gif.gif" style="" />
+                            <img id="s4img8" class="element" src="img/frame6b_img3.png" style="" />
+                            <img id="s4img9" class="element" src="img/frame6b_img4.png" style="" />
+                            <img id="s4img10" class="element" src="img/frame6b_img5.png" style="" />
+                            <img id="s4img11" class="element" src="img/frame6b_img6.png" style="" />
+                        </div>
+                    </div>
+                    <!--Transcript -->
+                    <!--<div onclick="onclickShowTranscription(this);" id="stickyContent">
+                        <a href="#">
+                            <img src="../common/../common/img/showTrans.png" class="showTrans" />
+                        </a>
+                    </div>
+                    <div id="transcript-hide" style="display: none;">
+                        <center> <button type="button" class="hidebutton" onclick="onclickHideTranscription(this);"> Hide Transcript</button></center>
+
+                        <div class="transcript" style="">
+                            <p>
+                                Arterial supply to the penis is by the branches of the internal pudendal artery. The corpora cavernosa are supplied by the dorsal arteries and the deep cavernosal arteries which are located in the centre of each of the corpus cavernosum.
+                            </p>
+                            <p>
+                                The corpus spongiosum is supplied by the dorsal artery and by the artery of the bulb of the penis. Many blood vessels from the deep arteries of the penis traverse the spaces in the erectile tissues. In the relaxed state these arteries are coiled and during excitation related nerve impulses result in the uncoiling of these arteries and rapid flow of blood in to the cavernous spaces and cause the penis to become turgid.
+                            </p>
+
+                        </div>
+                    </div>-->
+                    <div onclick="onclickShowTranscription(this);" id="stickyContent">
+                        <a href="#">
+                            <img id="sh_trn" src="../common/../common/img/showTrans.png" />
+                        </a>
+                    </div>
+                    <div id="transcript-hide" style="display: none;">
+                        <div class="transcript" style="">
+                            <p>
+                                Arterial supply to the penis is by the branches of the internal pudendal artery. The corpora cavernosa are supplied by the dorsal arteries and the deep cavernosal arteries which are located in the centre of each of the corpus cavernosum.<sup>6</sup>
+                            </p>
+                            <p>
+                                The corpus spongiosum is supplied by the dorsal artery and by the artery of the bulb of the penis. Many blood vessels from the deep arteries of the penis traverse the spaces in the erectile tissues. In the relaxed state these arteries are coiled and during excitation related nerve impulses result in the uncoiling of these arteries and rapid flow of blood in to the cavernous spaces and cause the penis to become turgid.<sup>6</sup>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <!--slide05 starting-->
+                <div id="slide5" style="display: none;">
+                    <div class="slidecontent" style="">
+                        <div id="s5frame1" class="frame">
+                            <div class="ttl_div" id="s5img1_div">
+                                <img id="s5img1" class="fixed element" src="img/frame7_img1.png" />
+                                <img id="s5img2" class="fixed element" src="img/frame7_img2.png" />
+                                <img id="s5img3" class="fixed element" src="img/frame7_img3.png" />
+                                <img id="s5img4" class="fixed element" src="img/frame7_img4.png" />
+                                <img id="s5img5" class="fixed element" src="img/frame7_img5.png" /> 
+                            </div>
+                           </div>
+                    </div>
+                    <!--Transcript -->
+                    <!--<div onclick="onclickShowTranscription(this);" id="stickyContent">
+                        <a href="#">
+                            <img src="../common/../common/img/showTrans.png" class="showTrans" />
+                        </a>
+                    </div>
+                    <div id="transcript-hide" style="display: none;">
+                        <center> <button type="button" class="hidebutton" onclick="onclickHideTranscription(this);"> Hide Transcript</button></center>
+
+                        <div class="transcript" style="">
+                            <p>
+                                The venous drainage of the penis comprises of the superficial, intermediate and deep venous systems. The superficial system consists of veins draining in to the superficial dorsal vein. Small veins from the corpora cavernosa drain into small vessels in the tunica albuginea called the sub-tunical vessels which in turn drain into veins that run around the circumference of the penis and receive tributaries from the corpus spongiosum. The circumferential veins drain into the deep dorsal vein.
+                            </p>
+                            <p>
+                                This forms the intermediate venous system. The deep venous drainage system consists of the crural veins and the cavernosal veins. The veins of the penis play a significant role in the physiology of erection.
+
+
+                            </p>
+                            <p>Hemodynamic events such as increased blood flow into the sinusoids and restricted drainage of venous blood in the erectile tissues which is caused by smooth muscle relaxation in the corpora cavernosa, arterial dilatation result in erection of the penis with sexual stimulation. The muscles at the root of the penis constrict and compress the veins thereby preventing drainage of blood and maintaining the erection.</p>
+                        </div>
+                    </div>-->
+                    <div onclick="onclickShowTranscription(this);" id="stickyContent">
+                        <a href="#">
+                            <img id="sh_trn" src="../common/../common/img/showTrans.png" />
+                        </a>
+                    </div>
+                    <div id="transcript-hide" style="display: none;">
+                        <div class="transcript" style="">
+                            <p>
+                                The venous drainage of the penis comprises of the superficial, intermediate and deep venous systems.<sup>7</sup> The superficial system consists of veins draining in to the superficial dorsal vein.<sup>7</sup> Small veins from the corpora cavernosa drain into small vessels in the tunica albuginea called the sub-tunical vessels which in turn drain into veins that run around the circumference of the penis and receive tributaries from the corpus spongiosum. The circumferential veins drain into the deep dorsal vein.<sup>4</sup>
+                            </p>
+                            <p>
+                                This forms the intermediate venous system. The deep venous drainage system consists of the crural veins and the cavernosal veins.<sup>7</sup> The veins of the penis play a significant role in the physiology of erection.<sup>8,9</sup>
+
+
+                            </p>
+                            <p>Hemodynamic events such as increased blood flow into the sinusoids and restricted drainage of venous blood in the erectile tissues which is caused by smooth muscle relaxation in the corpora cavernosa, arterial dilation result in erection of the penis with sexual stimulation. The muscles at the root of the penis constrict and compress the veins thereby preventing drainage of blood and maintaining the erection.<sup>6</sup></p>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!--slide06 Starting-->
+                <div id="slide6" style="display: none;">
+                    <div class="slidecontent" style="">
+                        <div id="s6frame1" class="frame">
+                            <p id="s6txt1" class="pbullhead element" style="margin-top:20px;">RAndomised Placebo-controlled ITP Study with Eltrombopag - RAISE</p>
+                            <div id="s6img_div" class="ttl_div">
+                                <img id="s6img1" class="fixed element" src="img/frame8a_img1.png" />
+                                <img id="s6img2" class="fixed element" src="img/frame8a_img2.png" />
+                                <img id="s6img3" class="fixed element" src="img/frame8a_img3.png" />
+                                <img id="s6img4" class="fixed element" src="img/frame8a_img4.png" />
+                                <img id="s6img5" class="fixed element" src="img/frame8a_img5.png" />
+                                <img id="s6img6" class="fixed element" src="img/frame8a_img6.png" />
+
+                            </div>
+                        </div>
+                        <div id="s6frame2" class="frame">
+
+
+
+                        </div>
+                    </div>
+
+
+                    <!--Transcript -->
+                    <!--<div onclick="onclickShowTranscription(this);" id="stickyContent">
+                        <a href="#">
+                            <img src="../common/../common/img/showTrans.png" class="showTrans" />
+                        </a>
+                    </div>
+                    <div id="transcript-hide" style="display: none;">
+                        <center> <button type="button" class="hidebutton" onclick="onclickHideTranscription(this);"> Hide Transcript</button></center>
+
+                        <div class="transcript" style="">
+                            <p>
+                                As discussed earlier penile erection is a vascular event and has 2 components which include arterial dilatation and venous occlusion. There is little blood flow to the penis in the detumescent state and the smooth muscle within is in a state of contraction. Arterial and cavernosal smooth muscle relaxation results in a 20 – 40 fold increase in the blood flow to the penis. As a result the sinusoids in the corpora cavernosa get engorged with blood during erection.
+                            </p>
+                            <p>As penile erection develops there is an increase in pressure on the surface of the corpora near the tunica albuginea and compresses the veins that drain blood away from the corpora. This trapping of blood increases the pressure in the cavernous tissues. This component of erection is further enhanced by the contraction of the muscles at the root of the penis which further forces blood into the erectile tissues and increases rigidity. </p>
+                        </div>
+                    </div>-->
+                    <div onclick="onclickShowTranscription(this);" id="stickyContent">
+                        <a href="#">
+                            <img id="sh_trn" src="../common/../common/img/showTrans.png" />
+                        </a>
+                    </div>
+                    <div id="transcript-hide" style="display: none;">
+                        <div class="transcript" style="">
+                            <p>
+                                As discussed earlier penile erection is a vascular event and has 2 components which include arterial dilation and venous occlusion. There is little blood flow to the penis in the detumescent state and the smooth muscle within is in a state of contraction. Arterial and cavernosal smooth muscle relaxation results in a 20 – 40 fold increase in the blood flow to the penis. As a result the sinusoids in the corpora cavernosa get engorged with blood during erection.
+                            </p>
+                            <p>As penile erection develops there is an increase in pressure on the surface of the corpora near the tunica albuginea and compresses the veins that drain blood away from the corpora. This trapping of blood increases the pressure in the cavernous tissues. This component of erection is further enhanced by the contraction of the muscles at the root of the penis which further forces blood into the erectile tissues and increases rigidity.<sup>10</sup> </p>
+                        </div>
+                    </div>
+                </div>
+                <!--start of slide7-->
+                <div id="slide7" style="display: none;">
+                    <div class="slidecontent" style="">
+                        <div id="s7frame1" class="frame">
+                            <img class="fixed element" id="s7aimg1" src="img/frame9a_img1.png" style="" />
+                            <img class="fixed element" id="s7aimg2" src="img/frame9a_img2.png" style="" />
+                            <img class="fixed element" id="s7aimg3" src="img/frame9a_img3.png" style="" />
+                            <img class="fixed element" id="s7aimg4" src="img/frame9a_img4.png" style="" />
+                            <img class="fixed element" id="s7aimg5" src="img/frame9a_img5.png" style="" />
+                            <img class="fixed element" id="s7aimg6" src="img/frame9a_img6.png" style="" />
+                            <img class="fixed element" id="s7aimg7" src="img/frame9a_img7.png" style="" />
+                        </div>
+                        <div id="s7frame2" class="frame">
+                            <div class="ttl_div">
+                                
+                                <img class="fixed element" id="s7bimg2" src="img/frame9b_img2.png" />
+                                <img class="fixed element" id="s7bimg3" src="img/frame9b_img3.png" />
+                                <img class="fixed element" id="s7bimg4" src="img/frame9b_img4.png" />
+                                <img class="fixed element" id="s7bimg5" src="img/frame9b_img5.png" />
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--<div onclick="onclickShowTranscription(this);" id="stickyContent">
+                        <a href="#">
+                            <img src="../common/img/showTrans.png" class="showTrans" />
+                        </a>
+                    </div>
+                    <div id="transcript-hide" style="display: none;">
+                        <center> <button type="button" class="hidebutton" onclick="onclickHideTranscription(this);"> Hide Transcript</button></center>
+                        <div class="transcript" style="">
+                            <p>
+                                Distinct mechanisms are involved in penile erection. These include the central psychogenic mechanism and the reflexogenic mechanism.
+                            </p>
+                            <p>The psychogenic mechanism results in erection and starts as central psychogenic stimuli generated or received in the brain in response to auditory, visual, olfactory, imaginative stimuli in the absence of physical touch. They are believed to be mediated primarily via the sympathetic thoracolumbar path, although the sacral parasympathetic system also may participate. </p>
+                            <p>Reflexogenic errections are elicited in response to direct stimulation of the penis. They are mediated by a spinal reflex pathway through sensory receptors in the penile skin and the glans and the dorsal nerve that joins the pudendal nerve to reach the sacral spinal cord. </p>
+                            <p>Another mode of penile erection is sleep erection which occurs in 95% of rapid eye movement sleep, on an average of 3 to 5 times per night and may last from 30 minutes to 60 minutes. </p>
+
+
+                        </div>
+                    </div>-->
+                    <div onclick="onclickShowTranscription(this);" id="stickyContent">
+                        <a href="#">
+                            <img id="sh_trn" src="../common/../common/img/showTrans.png" />
+                        </a>
+                    </div>
+                    <div id="transcript-hide" style="display: none;">
+                        <div class="transcript" style="">
+                            <p>
+                                Distinct mechanisms are involved in penile erection. These include the central psychogenic mechanism and the reflexogenic mechanism.<sup>11</sup>
+                            </p>
+                            <p>The psychogenic mechanism results in erection and starts as central psychogenic stimuli generated or received in the brain in response to auditory, visual, olfactory, imaginative stimuli in the absence of physical touch. They are believed to be mediated primarily via the sympathetic thoracolumbar path, although the sacral parasympathetic system also may participate.<sup>11,12</sup> </p>
+                            <p>Reflexogenic errections are elicited in response to direct stimulation of the penis. They are mediated by a spinal reflex pathway through sensory receptors in the penile skin and the glans and the dorsal nerve that joins the pudendal nerve to reach the sacral spinal cord.<sup>11,12</sup> </p>
+                            <p>Another mode of penile erection is sleep erection which occurs in 95% of rapid eye movement sleep, on an average of 3 to 5 times per night and may last from 30 minutes to 60 minutes.<sup>12</sup> </p>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- start of slide 8-->
+                <div id="slide8" style="display: none;">
+                    <!--Body -->
+                    <!--<div class="topic-bar">
+                <div id="topic-title">Smoking cessation and COPD</div>
+            </div>-->
+
+                    <div class="slidecontent" style="">
+                        <div id="s8frame1" class="frame">
+                            <img id="s8img1" class="fixed element" src="img/frame2_img1.png" style="" />
+                            <img id="s8img2" class="fixed element" src="img/frame2_img2.png" style="" />
+                            <img id="s8img3" class="fixed element" src="img/frame2_img3.png" style="" />
+                            <img id="s8img4" class="fixed element" src="img/frame2_img4.png" style="" />
+                            <img id="s8img5" class="fixed element" src="img/frame2_img5.png" style="" />
+                            <img id="s8img6" class="fixed element" src="img/frame2_img6.png" style="" />
+                            <img id="s8img2h" class="fixed element" src="img/frame2_img2h.png" style="" />
+                            <img id="s8img3h" class="fixed element" src="img/frame2_img3h.png" style="" />
+
+                        </div>
+
+
+                    </div>
+
+
+                    <!--<div onclick="onclickShowTranscription(this);" id="stickyContent">
+                        <a href="#">
+                            <img src="../common/img/showTrans.png" class="showTrans" />
+                        </a>
+                    </div>
+                    <div id="transcript-hide" style="display: none;">
+                        <center> <button type="button" class="hidebutton" onclick="onclickHideTranscription(this);"> Hide Transcript</button></center>
+                        <div class="transcript" style="">
+                            <p>Smooth muscle contraction, which is an important component of the physiological processes involved in penile erection, is modulated calcium binding. Intracellular calcium ion concentration is a crucial factor and is regulated by several mechanisms. The nitric oxide-cyclic GMP (NO/cGMP) pathway and the phosphodiesterase mechanisms are 2 mechanisms that have been unravelled and understood in detail.</p>
+                            <p>The NO/cGMP pathway is a major regulator of smooth muscle relaxation in the penis. Nitric oxide, which may be derived from the cavernous nerves or from the endothelium lining the sinuses, initiates and maintains erection. NO activates the membrane bound enzyme guanylyl cyclase which converts GTP to cyclic GMP (cGMP) which in turn causes a cascade of events that eventually reduce the intracellular concentration of Ca2+ by increasing sequestration and extracellular transport while reducing intracellular transportation. </p>
+                            <p>Phosphodiesterases (PDEs) are a class of enzymes that degrade cyclic nucleotides such as cGMP and cAMP and the predominant type of PDE in the penile tissues is PDE5 which acts on cGMP. PDE5 breaks down cGMP to 5 prime GMP and reduces the concentration of calcium and eventually promotes flaccidity consequent to smooth muscle contraction. </p>
+                            <p>During sexual arousal inhibition of PDE5 mediated degradation of cGMP promotes increased intracellular concentrations of cyclic GMP and erection. </p>
+
+
+                        </div>
+                    </div>-->
+                    <div onclick="onclickShowTranscription(this);" id="stickyContent">
+                        <a href="#">
+                            <img id="sh_trn" src="../common/../common/img/showTrans.png" />
+                        </a>
+                    </div>
+                    <div id="transcript-hide" style="display: none;">
+                        <div class="transcript" style="">
+                            <p>Smooth muscle contraction, which is an important component of the physiological processes involved in penile erection, is modulated calcium binding. Intracellular calcium ion concentration is a crucial factor and is regulated by several mechanisms. The nitric oxide-cyclic GMP (NO/cGMP) pathway and the phosphodiesterase mechanisms are 2 mechanisms that have been unravelled and understood in detail.</p>
+                            <p>The NO/cGMP pathway is a major regulator of smooth muscle relaxation in the penis. Nitric oxide, which may be derived from the cavernous nerves or from the endothelium lining the sinuses, initiates and maintains erection. NO activates the membrane bound enzyme guanylyl cyclase which converts GTP to cyclic GMP (cGMP) which in turn causes a cascade of events that eventually reduce the intracellular concentration of Ca2+ by increasing sequestration and extracellular transport while reducing intracellular transportation.<sup>13</sup> </p>
+                            <p>Phosphodiesterases (PDEs) are a class of enzymes that degrade cyclic nucleotides such as cGMP and cAMP and the predominant type of PDE in the penile tissues is PDE5 which acts on cGMP. PDE5 breaks down cGMP to 5 prime GMP and reduces the concentration of calcium and eventually promotes flaccidity consequent to smooth muscle contraction.<sup>13</sup> </p>
+                            <p>During sexual arousal inhibition of PDE5 mediated degradation of cGMP promotes increased intracellular concentrations of cyclic GMP and erection.<sup>13</sup> </p>
+
+
+                        </div>
+                    </div>
+                </div>
+                <!--end of slide 8-->
+                <div id="slide8a" style="display: none;">
+
+                    <div class="slidecontent" style="">
+                        <div id="s8aframe1" class="frame">
+                            <div class="ttl_div" id="s8aimg_div">
+                                <!--<img id="s8aimg1" class="fixed element" src="img/frame11a_img1.png" />-->
+
+                                <img id="s8aimg2" class="fixed element" src="img/frame11a_img2.png" />
+                                <img id="s8aimg3" class="fixed element" src="img/frame11a_img3.png" />
+                                <img id="s8aimg4" class="fixed element" src="img/frame11a_img4.png" />
+                                <img id="s8aimg5" class="fixed element" src="img/frame11a_img5.png" />
+                                <img id="s8aimg6" class="fixed element" src="img/frame11a_img6.png" />
+                                <img id="s8aimg7" class="fixed element" src="img/frame11a_img7.png" />
+                                <img id="s8aimg8" class="fixed element" src="img/frame11a_img8.png" />
+                                <img id="s8aimg9" class="fixed element" src="img/frame11a_img9.png" />
+                                <img id="s8aimg10" class="fixed element" src="img/frame11a_img10.png" />
+                            </div>
+
+
+                        </div>
+                        <div id="s8aframe2" class="frame">
+                            <div class="ttl_div" id="s8aimg_div">
+                                <img class="fixed element" id="s8aimg11" src="img/frame11b_img1.png" />
+                                <img class="fixed element" id="s8aimg12" src="img/frame11b_img2.png" />
+                                <img class="fixed element" id="s8aimg13" src="img/frame11b_img3.png" />
+                                <img class="fixed element" id="s8aimg14" src="img/frame11b_img4.png" />
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <!--<div onclick="onclickShowTranscription(this);" id="stickyContent">
+                        <a href="#">
+                            <img src="../common/img/showTrans.png" />
+                        </a>
+                    </div>
+                    <div id="transcript-hide" style="display: none;">
+                        <center> <button type="button" class="hidebutton" onclick="onclickHideTranscription(this);"> Hide Transcript</button></center>
+                        <div class="transcript" style="">
+                            <p>
+                                ED is classified as psychogenic and organic based on the underlying cause. Psychogenic ED was earlier considered to the most common, however it is now recognized that vasculogenic ED is in fact the most common.
+                            </p>
+                            <p>
+                                Organic causes of ED may further be classified as vasculogenic, neurogenic, anatomic and endocrinological. Psychogenic ED may be generalized or situational.
+                            </p>
+                            <p>Organic causes of ED such as vascular, neurologic and hormonal abnormalities with an occasional psychogenic component may be common in older men. However, men under the age of 40 years may have psychogenic factors as the most important contributing factor for ED.  </p>
+
+                        </div>
+
+                    </div>-->
+                    <div onclick="onclickShowTranscription(this);" id="stickyContent">
+                        <a href="#">
+                            <img id="sh_trn" src="../common/../common/img/showTrans.png" />
+                        </a>
+                    </div>
+                    <div id="transcript-hide" style="display: none;">
+                        <div class="transcript" style="">
+                            <p>
+                                ED is classified as psychogenic and organic based on the underlying cause. Psychogenic ED was earlier considered to the most common, however it is now recognized that vasculogenic ED is in fact the most common.<sup>11</sup>
+                            </p>
+                            <p>
+                                Organic causes of ED may further be classified as vasculogenic, neurogenic, anatomic and endocrinological. Psychogenic ED may be generalized or situational.<sup>14</sup>
+                            </p>
+                            <p>Organic causes of ED such as vascular, neurologic and hormonal abnormalities with an occasional psychogenic component may be common in older men. However, men under the age of 40 years may have psychogenic factors as the most important contributing factor for ED.<sup>15</sup>  </p>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!--start of slide 9-->
+                <div id="slide9" style="display: none;">
+                    <!--Body -->
+                    <!--<div class="topic-bar">
+                <div id="topic-title">Smoking cessation and COPD</div>
+            </div>-->
+
+                    <div class="slidecontent" style="">
+                        <div id="s9frame1" class="frame">
+                            <p id="s9txt1" class="pbullhead element" style="margin-top:20px;">Vasculogenic ED may be arterial, venous (cavernous) or mixed. </p>
+
+                            <img id="s9img1" class="fixed element" src="img/frame8a_img.png" style="" />
+
+                        </div>
+
+
+
+                        <div id="s9frame2" class="frame">
+
+                            <img id="s9img2" class="fixed element" src="img/frame12b_img.png" style="" />
+                            <p id="s9txt2" class="pbullhead element" style="margin-top:220px;">Peyronie’s disease </p>
+                            <p id="s9txt3" class="bullet element" style="">Repeated trauma to the tunica albuginea</p>
+                            <p id="s9txt4" class="bullet element" style="">Formation of plaque causing penile curvature</p>
+                            <p id="s9txt5" class="bullet element" style="">Prevalence increases with age </p>
+
+
+                        </div>
+                        <div id="s9frame3" class="frame">
+                            <!--<img id="s9img3" class="element" src="img/frame12c_img.png" style="" />-->
+                            <div id="s9img_div">
+                                <img id="s9img6" class="fixed element" src="img/frame12c_img3.png" style="" />
+                                <img id="s9img5" class="fixed element" src="img/frame12c_img2.png" style="" />
+                                <img id="s9img4" class="fixed element" src="img/frame12c_img1.png" style="" />
+                                <img id="s9img3a" class="fixed element" src="img/frame12c_img1a.png" style="" />
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+
+
+                    <!--<div onclick="onclickShowTranscription(this);" id="stickyContent">
+                        <a href="#">
+                            <img src="../common/img/showTrans.png" class="showTrans" />
+                        </a>
+                    </div>
+                    <div id="transcript-hide" style="display: none;">
+                        <center> <button type="button" class="hidebutton" onclick="onclickHideTranscription(this);"> Hide Transcript</button></center>
+                        <div class="transcript" style="">
+                            <p>Vasculogenic ED may be arterial, venous (cavernous or mixed). </p>
+                            <p>
+                                The two most common vascular disorders causing ED include focal occlusion of the penile artery and Peyronie’s disease. Studies have revealed that subclinical perineal trauma, commonly seen in younger men associated with bicycling, may also cause ED. Bicycling decreases the peak systolic velocity of cavernosal artery to 0 as a result of perineal pressure from bicycle seats. This further occludes the penile blood vessels temporarily leading to focal occlusive arterial disease.
+                            </p>
+                            <p>Peyronie’s disease is thought to arise as a result of repeated trauma to the tunica albuginea leading to formation of plaque causing penile curvature. Plaque formation is time consuming and hence the prevalence of ED increases with age.</p>
+                            <p>Mechanism of arteriogenic ED involves structural changes. Arterial insufficiency leads to reduction in oxygen tension in the blood of corpus cavernosum. Formation of PGE1 and PGE2 is oxygen-dependent, hence, an increase in oxygen tension is associated with high levels of PGE2 and suppression of TGF-β1-induced collagen synthesis in the corpus cavernosum. However, a reduction in oxygen tension diminishes the cavernous trabecular smooth muscle content leading to diffuse venous leakage.</p>
+
+                        </div>
+                    </div>-->
+                    <div onclick="onclickShowTranscription(this);" id="stickyContent">
+                        <a href="#">
+                            <img id="sh_trn" src="../common/../common/img/showTrans.png" />
+                        </a>
+                    </div>
+                    <div id="transcript-hide" style="display: none;">
+                        <div class="transcript" style="">
+                            <p>Vasculogenic ED may be arterial, venous (cavernous) or mixed.</p>
+                            <p>
+                                 The two most common vascular disorders causing ED include focal occlusion of the penile artery and Peyronie’s disease. Studies have revealed that subclinical perineal trauma, commonly seen in younger men associated with bicycling, may also cause ED. Bicycling decreases the peak systolic velocity of cavernosal artery to 0 as a result of perineal pressure from bicycle seats. This further occludes the penile blood vessels temporarily leading to focal occlusive arterial disease.<sup>15</sup>
+                            </p>
+                            <p>Peyronie’s disease is thought to arise as a result of repeated trauma to the tunica albuginea leading to formation of plaque causing penile curvature. Plaque formation is time consuming and hence the prevalence of ED increases with age.<sup>15</sup></p>
+                            <p>Mechanism of arteriogenic ED involves structural changes. Arterial insufficiency leads to reduction in oxygen tension in the blood of corpus cavernosum. Formation of PGE1 and PGE2 is oxygen-dependent, hence, an increase in oxygen tension is associated with high levels of PGE2 and suppression of TGF-β1-induced collagen synthesis in the corpus cavernosum. However, a reduction in oxygen tension diminishes the cavernous trabecular smooth muscle content leading to diffuse venous leakage.<sup>14</sup></p>
+
+                        </div>
+                    </div>
+                </div>
+                <!--end of slide 9-->
+                <div id="slide12" style="display: none;">
+                    <!--Body -->
+                    <!--<div class="topic-bar">
+                <div id="topic-title">Smoking cessation and COPD</div>
+            </div>-->
+
+                    <div class="slidecontent" style="">
+                        <div id="s12frame1" class="frame">
+                            <div class="ttl_div" id="s12img_div">
+                                <img class="fixed element" id="s12img1" src="img/frame13_1.png" />
+                                <img class="fixed element" id="s12img2" src="img/frame13_2.png" />
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--<div onclick="onclickShowTranscription(this);" id="stickyContent">
+                        <a href="#">
+                            <img src="../common/img/showTrans.png" class="showTrans" />
+                        </a>
+                    </div>
+                    <div id="transcript-hide" style="display: none;">
+                        <center> <button type="button" class="hidebutton" onclick="onclickHideTranscription(this);"> Hide Transcript</button></center>
+                        <div class="transcript" style="">
+                            <p>Some of the common neurogenic causes that contribute to ED include stroke, Parkinson’s disease and multiple sclerosis. Nerve damage leading to ED can be caused by some types of physical trauma and injuries to pelvic region or spinal cord. ED is often under-recognized and under-treated among patients with dementia due to paucity of data.</p>
+                            <p>Hormonal causes of ED are uncommon in young individuals. However, low testosterone levels causing ED is seen in elder individuals. Few common hormonal disorders that are associated with ED include diabetes mellitus, hyper-/hypothyroidism, Klinefelter’s syndrome, etc.</p>
+                        </div>
+                    </div>-->
+                    <div onclick="onclickShowTranscription(this);" id="stickyContent">
+                        <a href="#">
+                            <img id="sh_trn" src="../common/../common/img/showTrans.png" />
+                        </a>
+                    </div>
+                    <div id="transcript-hide" style="display: none;">
+                        <div class="transcript" style="">
+                            <p>Some of the common neurogenic causes that contribute to ED include stroke, Parkinson’s disease and multiple sclerosis. Nerve damage leading to ED can be caused by some types of physical trauma and injuries to pelvic region or spinal cord. ED is often under-recognized and under-treated among patients with dementia due to paucity of data.<sup>16</sup></p>
+                            <p>Hormonal causes of ED are uncommon in young individuals. However, low testosterone levels causing ED is seen in elder individuals.<sup>15</sup> Few common hormonal disorders that are associated with ED include diabetes mellitus, hyper-/hypothyroidism, Klinefelter’s syndrome, etc.<sup>15</sup></p>
+                        </div>
+                    </div>
+                </div>
+                <!--end of slide 12-->
+                <div id="slide12a" style="display: none;">
+
+                    <div class="slidecontent" style="">
+                        <div id="s12aframe1" class="frame">
+                            <img class="fixed element" id="s12aimg1" src="img/frame14a.png" />
+                            <p id="s12atxt1" class="pbullhead element">Psychogenic ED</p>
+                            <p id="s12atxt2" class="bullet element">Generalized type</p>
+                            <p id="s12atxt3" class="bullet element">Situational type</p>
+                        </div>
+                        <div id="s12aframe2" class="frame">
+                            <div class="ttl_div" id="s12aimg_div">
+                                <img class="fixed element" id="s12aimg2" src="img/frame14b_1.png" />
+                                <img class="fixed element" id="s12aimg3" src="img/frame14b_2.png" />
+                                <img class="fixed element" id="s12aimg4" src="img/frame14b_3.png" />
+                                <img class="fixed element" id="s12aimg5" src="img/frame14b_4.png" />
+                                <img class="fixed element" id="s12aimg6" src="img/frame14b_5.png" />
+                                <img class="fixed element" id="s12aimg7" src="img/frame14b_6.png" />
+                                <img class="fixed element" id="s12aimg8" src="img/frame14b_7.png" />
+                            </div>
+                        </div>
+                    </div>
+                    <!--<div onclick="onclickShowTranscription(this);" id="stickyContent">
+                        <a href="#">
+                            <img src="../common/img/showTrans.png" />
+                        </a>
+                    </div>
+                    <div id="transcript-hide" style="display: none;">
+                        <center> <button type="button" class="hidebutton" onclick="onclickHideTranscription(this);"> Hide Transcript</button></center>
+                        <div class="transcript" style="">
+                            <p>Psychogenic causes of ED include performance anxiety, fear of negative consequences, interpersonal factors and relationship factors/conflicts. The International Society of Impotence Research has proposed a new classification for psychogenic ED. According to this classification psychogenic ED is classified into generalized type and situational type.</p>
+                            <p>Generalized type of ED can be of either unresponsive type or inhibitory type. Generalized unresponsive type can be due to primary lack of sexual arousability or age-related decline in sexual arousability whereas generalized inhibitory type is due to chronic disorder of sexual intimacy.</p>
+                            <p>Situational type of ED can be partner-related, performance-related or psychogenic distress. Partner-related factors include lack of arousability and high central inhibition due to partner conflict. Performance-related factors include rapid ejaculation or fear of failure. Psychogenic distress can be due to depression or stress.</p>
+                        </div>
+
+                    </div>-->
+                    <div onclick="onclickShowTranscription(this);" id="stickyContent">
+                        <a href="#">
+                            <img id="sh_trn" src="../common/../common/img/showTrans.png" />
+                        </a>
+                    </div>
+                    <div id="transcript-hide" style="display: none;">
+                        <div class="transcript" style="">
+                            <p>Psychogenic causes of ED include performance anxiety, fear of negative consequences, interpersonal factors and relationship factors/conflicts. The International Society of Impotence Research has proposed a new classification for psychogenic ED. According to this classification psychogenic ED is classified into generalized type and situational type.<sup>17</sup></p>
+                            <p>Generalized type of ED can be of either unresponsive type or inhibitory type. Generalized unresponsive type can be due to primary lack of sexual arousability or age-related decline in sexual arousability whereas generalized inhibitory type is due to chronic disorder of sexual intimacy.<sup>17</sup></p>
+                            <p>Situational type of ED can be partner-related, performance-related or psychogenic distress. Partner-related factors include lack of arousability and high central inhibition due to partner conflict. Performance-related factors include rapid ejaculation or fear of failure. Psychogenic distress can be due to depression or stress.<sup>17</sup></p>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!--start of slide 13-->
+                <!--end of slide 13-->
+                <div id="slide15" style="display: none;">
+
+                    <div class="slidecontent" style="">
+                        <div id="s15frame1" class="frame">
+                            <div class="ttl_div" id="s15img_div">
+                                <img class="fixed element" id="s15img1" src="img/frame15a_img1.png" />
+                                <img class="fixed element" id="s15img2" src="img/frame15a_img2.png" />
+                                <img class="fixed element" id="s15img3" src="img/frame15a_img3.png" />
+                                <img class="fixed element" id="s15img4" src="img/frame15a_img4.png" />
+                                <img class="fixed element" id="s15img5" src="img/frame15a_img5.png" />
+                                <img class="fixed element" id="s15img6" src="img/frame15a_img6.png" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--<div onclick="onclickShowTranscription(this);" id="stickyContent">
+                        <a href="#">
+                            <img src="../common/img/showTrans.png" class="showTrans" />
+                        </a>
+                    </div>
+                    <div id="transcript-hide" style="display: none;">
+                        <center> <button type="button" class="hidebutton" onclick="onclickHideTranscription(this);"> Hide Transcript</button></center>
+                        <div class="transcript" style="">
+                            <p>Many medications can cause ED in men by affecting sexual arousal and sexual performance. The common medications include antihypertensives, antidepressants, antihistamines, chemotherapy, etc. Atenolol, Chlorthalidone, Enalapril, Hydrochlorothiazide, Metoprolol, Verapamil, etc are some of the antihypertensive medications that can cause ED.</p>
+                            <p>Amitriptyline, Chlorpromazine, Diazepam, Fluoxetine, Sertraline, etc are some of the antidepressants that can result in ED. Antihistamines that can cause ED include Cimetidine, Meclizine, Promethazine and Ranitidine. Chemotherapy agents such as Flutamide, Busulfan, Ketoconazole and Cyclophosphamide can cause ED in men.</p>
+
+                        </div>
+                    </div>-->
+                    <div onclick="onclickShowTranscription(this);" id="stickyContent">
+                        <a href="#">
+                            <img id="sh_trn" src="../common/../common/img/showTrans.png" />
+                        </a>
+                    </div>
+                    <div id="transcript-hide" style="display: none;">
+                        <div class="transcript" style="">
+                            <p>Many medications can cause ED in men by affecting sexual arousal and sexual performance. The common medications include antihypertensives, antidepressants, antihistamines, chemotherapy, etc. Atenolol, Chlorthalidone, Enalapril, Hydrochlorothiazide, Metoprolol, Verapamil, etc are some of the antihypertensive medications that can cause ED.<sup>18</sup></p>
+                            <p>Amitriptyline, Chlorpromazine, Diazepam, Fluoxetine, Sertraline, etc are some of the antidepressants that can result in ED. Antihistamines that can cause ED include Cimetidine, Meclizine, Promethazine and Ranitidine. Chemotherapy agents such as Flutamide, Busulfan, Ketoconazole and Cyclophosphamide can cause ED in men.<sup>15,18,19</sup></p>
+
+                        </div>
+                    </div>
+                </div>
+                <!--start of slide 14-->
+                <div id="slide14" style="display: none;">
+
+                    <div class="slidecontent" style="">
+                        <div id="s14frame1" class="frame">
+                            <p class=" element" id="s14txt1">Risk factors of ED</p>
+                            <img class="fixed element" id="s14img1" src="img/frame16_1.png" style="" />
+                            <img class="fixed element" id="s14img2" src="img/frame16_2.png" style="" />
+                            <img class="fixed element" id="s14img3" src="img/frame16_3.png" style="" />
+                            <img class="fixed element" id="s14img4" src="img/frame16_4.png" style="" />
+                            <img class="fixed element" id="s14img5" src="img/frame16_5.png" style="" />
+                            <img class="fixed element" id="s14img6" src="img/frame16_6.png" style="" />
+                            <img class="fixed element" id="s14img7" src="img/frame16_7.png" style="" />
+                            <img class="fixed element" id="s14img8" src="img/frame16_8.png" style="" />
+                        </div>
+
+                        <div id="s14frame2" class="frame">
+                            <img class="fixed element" id="s14img1a" src="img/frame16a_1.png" style="" />
+                            <img class="fixed element" id="s14img2a" src="img/frame16a_2.png" style="" />
+                            <img class="fixed element" id="s14img3a" src="img/frame16a_3.png" style="" />
+                            <img class="fixed element" id="s14img4a" src="img/frame16a_4.png" style="" />
+                            <img class="fixed element" id="s14img5a" src="img/frame16a_5.png" style="" />
+                            <img class="fixed element" id="s14img6a" src="img/frame16a_6.png" style="" />
+
+                        </div>
+
+                    </div>
+
+
+                    <!--<div onclick="onclickShowTranscription(this);" id="stickyContent">
+                        <a href="#">
+                            <img src="../common/img/showTrans.png" class="showTrans" />
+                        </a>
+                    </div>
+                    <div id="transcript-hide" style="display: none;">
+                        <center> <button type="button" class="hidebutton" onclick="onclickHideTranscription(this);"> Hide Transcript</button></center>
+                        <div class="transcript" style="">
+                            <p>Risk factors for ED are numerous. Individuals more than 40 years of age demonstrate an association between ED and hypertension, dyslipdemia, diabetes mellitus, coronary artery disease and metabolic syndrome. Obesity and sedentary lifestyle also contribute to ED. Recent studies have demonstrated that hypogonadism is also associated with ED.</p>
+                            <p>Modifiable risk factors for ED include smoking, lack of physical activity, obesity, excessive alcohol consumption and recreational drug use. </p>
+                        </div>
+                    </div>-->
+                    <div onclick="onclickShowTranscription(this);" id="stickyContent">
+                        <a href="#">
+                            <img id="sh_trn" src="../common/../common/img/showTrans.png" />
+                        </a>
+                    </div>
+                    <div id="transcript-hide" style="display: none;">
+                        <div class="transcript" style="">
+                            <p>Risk factors for ED are numerous. Individuals more than 40 years of age demonstrate an association between ED and hypertension, dyslipdemia, diabetes mellitus, coronary artery disease and metabolic syndrome. Obesity and sedentary lifestyle also contribute to ED. Recent studies have demonstrated that hypogonadism is also associated with ED.<sup>19</sup></p>
+                            <p>Modifiable risk factors for ED include smoking, lack of physical activity, obesity, excessive alcohol consumption and recreational drug use.<sup>20</sup> </p>
+                        </div>
+                    </div>
+                </div>
+                <!--end of slide 14-->
+                <div id="slide16" style="display: none;">
+                    <!--Body -->
+                    <!--<div class="topic-bar">
+                <div id="topic-title">Smoking cessation and COPD</div>
+            </div>-->
+
+                    <div class="slidecontent" style="">
+
+
+                        <div id="s16frame1" class="frame">
+                            <!--<p id="s16txt1" class=" element" style="font-size: 12px;">*Age-adjusted odds ratio.</p>
+                            <p id="s16txt2" class=" element" style="font-size: 12px;">†Prostatic symptoms on the International Prostate</b>Symptom Score (IPSS) questionnaire. </p>-->
+                            <div class="ttl_div" id="s16img_div">
+                                <img class="fixed element" id="s16img9" src="img/frame20_imgz.png" />
+                                <img class="fixed element" id="s16img1" src="img/frame17_1.png" />
+                                <img class="fixed element" id="s16img2" src="img/frame17_2.png" />
+                                <img class="fixed element" id="s16img3" src="img/frame17_3.png" />
+                                <img class="fixed element" id="s16img4" src="img/frame17_4.png" />
+                                <img class="fixed element" id="s16img5" src="img/frame17_5.png" />
+                                <img class="fixed element" id="s16img6" src="img/frame17_6.png" />
+                                <img class="fixed element" id="s16img7" src="img/frame17_7.png" />
+                                <img class="fixed element" id="s16img8" src="img/frame17_8.png" />
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!--<div onclick="onclickShowTranscription(this);" id="stickyContent">
+                        <a href="#">
+                            <img src="../common/img/showTrans.png" class="showTrans" />
+                        </a>
+                    </div>
+                    <div id="transcript-hide" style="display: none;">
+                        <center> <button type="button" class="hidebutton" onclick="onclickHideTranscription(this);"> Hide Transcript</button></center>
+                        <div class="transcript" style="">
+                            <p>Analysis of chronic diseases and its association with ED using a self-assessment questionnaire revealed increased probability of some degree of ED. Age-adjusted odds ratio of developing ED was 4.08 for patients having diabetes mellitus, 2.93 for individuals having prostatic disease, 2.6 for patients with circulatory disease, 1.82 for depressive patients, 1.79 for cardiac disease patients, 1.63 for individuals with cholesterol problems and 1.58 in the presence of hypertension.</p>
+
+                        </div>
+                    </div>-->
+                    <div onclick="onclickShowTranscription(this);" id="stickyContent">
+                        <a href="#">
+                            <img id="sh_trn" src="../common/../common/img/showTrans.png" />
+                        </a>
+                    </div>
+                    <div id="transcript-hide" style="display: none;">
+                        <div class="transcript" style="">
+                            <p>Analysis of chronic diseases and its association with ED using a self-assessment questionnaire revealed increased probability of some degree of ED. Age-adjusted odds ratio of developing ED was 4.08 for patients having diabetes mellitus, 2.93 for individuals having prostatic disease, 2.6 for patients with circulatory disease, 1.82 for depressive patients, 1.79 for cardiac disease patients, 1.63 for individuals with cholesterol problems and 1.58 in the presence of hypertension.<sup>21,22</sup></p>
+
+                        </div>
+                    </div>
+                </div>
+                <!--end of slide 16-->
+                <div id="slide16a" style="display: none;">
+                    <!--Body -->
+                    <!--<div class="topic-bar">
+                <div id="topic-title">Smoking cessation and COPD</div>
+            </div>-->
+
+                    <div class="slidecontent" style="">
+                        <div id="s16aframe1" class="frame">
+                            <p id="s16atxt2" class="bullet"><b>MMAS</b></p>
+                            <p id="s16atxt1" class="bullet element" style="">Estimated prevalence of ED by 2025 322 million</p>
+                          
+                            <div class="ttl_div">
+                                <img class="fixed element" id="s16aimg1" src="img/frame18_1a.png" />
+                                <img class="fixed element" id="s16aimg2" src="img/frame18_2a.png" />
+                                <img class="fixed element" id="s16aimg3" src="img/frame18_3.png" />
+                                <img class="fixed element" id="s16aimg4" src="img/frame18_4.png" />
+                                <img class="fixed element" id="s16aimg5" src="img/frame18_5.png" />
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                    <!--<div onclick="onclickShowTranscription(this);" id="stickyContent">
+                        <a href="#">
+                            <img src="../common/img/showTrans.png" class="showTrans" />
+                        </a>
+                    </div>
+                    <div id="transcript-hide" style="display: none;">
+                        <center> <button type="button" class="hidebutton" onclick="onclickHideTranscription(this);"> Hide Transcript</button></center>
+                        <div class="transcript" style="overflow-x:hidden;">
+                            <p>The Massachusetts Male Aging Study (MMAS) is a community-based survey of men in the age group of 40-70 years. 52% of responders in the study reported some degree of ED. Complete ED was noticed in 10% of respondents whereas moderate ED was noticed in 25% of respondents and minimal ED in 17% of respondents. The incidence of moderate or severe ED doubled in the age group of 40-70 years.</p>
+                            <p>It is estimated that the global prevalence of ED by the year 2025 would be about 322 million and is possibly related to the ageing population and increase in risk factors.</p>
+                        </div>
+                    </div>-->
+                    <div onclick="onclickShowTranscription(this);" id="stickyContent">
+                        <a href="#">
+                            <img id="sh_trn" src="../common/../common/img/showTrans.png" />
+                        </a>
+                    </div>
+                    <div id="transcript-hide" style="display: none;">
+                        <div class="transcript" style="">
+                            <p>The Massachusetts Male Aging Study (MMAS) is a community-based survey of men in the age group of 40-70 years. 52% of responders in the study reported some degree of ED. Complete ED was noticed in 10% of respondents whereas moderate ED was noticed in 25% of respondents and minimal ED in 17% of respondents. The incidence of moderate or severe ED doubled in the age group of 40-70 years.<sup>23</sup></p>
+                            <p>It is estimated that the global prevalence of ED by the year 2025 would be about 322 million and is possibly related to the ageing population and increase in risk factors.<sup>24</sup></p>
+                        </div>
+                    </div>
+
+                </div>
+                <!--start of slide 17-->
+                <div id="slide17" style="display: none;">
+                    <!--Body -->
+                    <!--<div class="topic-bar">
+                <div id="topic-title">Smoking cessation and COPD</div>
+            </div>-->
+
+                    <div class="slidecontent" style="">
+                        <div id="s17frame1" class="frame">
+                            <p id="s17txt1" class="pbullhead element">ED screening may signal underlying disease:</p>
+                            <p id="s17txt2" class="bullet element">Diabetes</p>
+                            <p id="s17txt3" class="bullet element">Hypertension</p>
+                            <p id="s17txt4" class="bullet element">Dyslipidemia and coronary artery disease (CAD)</p>
+                            <p id="s17txt5" class="bullet element">Depression</p>
+                            <p id="s17txt6" class="pbullhead element">ED can result in:</p>
+                            <p id="s17txt7" class="bullet element">Anxiety</p>
+                            <p id="s17txt8" class="bullet element">Decreased self-esteem</p>
+                            <p id="s17txt9" class="bullet element">Reduced quality of life</p>
+                            <p id="s17txt10" class="bullet element">Negative effect on relationships</p>
+                        </div>
+
+                    </div>
+
+
+                    <!--<div onclick="onclickShowTranscription(this);" id="stickyContent">
+                        <a href="#">
+                            <img src="../common/img/showTrans.png" class="showTrans" />
+                        </a>
+                    </div>
+                    <div id="transcript-hide" style="display: none;">
+                        <center> <button type="button" class="hidebutton" onclick="onclickHideTranscription(this);"> Hide Transcript</button></center>
+                        <div class="transcript" style="overflow-x:hidden;">
+                            <p>Not only are couples who are experiencing erectile dysfunction (ED) frequently burdened with significant psychological conditions, ED may also signal the presence of a more serious underlying disease.</p>
+                            <p>It is important to diagnose and treat ED as it is often associated with comorbid conditions that may not have been detected previously, such as cardiovascular disease, diabetes, and depression. </p>
+                            <p>ED-associated distress can have a serious negative impact on the patients’ overall quality of life as well as on interpersonal relationships. </p>
+                        </div>
+                    </div>-->
+                    <div onclick="onclickShowTranscription(this);" id="stickyContent">
+                        <a href="#">
+                            <img id="sh_trn" src="../common/../common/img/showTrans.png" />
+                        </a>
+                    </div>
+                    <div id="transcript-hide" style="display: none;">
+                        <div class="transcript" style="">
+                            <p>Not only are couples who are experiencing erectile dysfunction (ED) frequently burdened with significant psychological conditions, ED may also signal the presence of a more serious underlying disease.<sup>22</sup></p>
+                            <p>It is important to diagnose and treat ED as it is often associated with comorbid conditions that may not have been detected previously, such as cardiovascular disease, diabetes, and depression.<sup>22</sup> </p>
+                            <p>ED-associated distress can have a serious negative impact on the patients’ overall quality of life as well as on interpersonal relationships.<sup>25</sup> </p>
+                        </div>
+                    </div>
+
+                </div>
+                <!--end of slide 25-->
+                <div id="slide25" style="display: none;">
+                    <!--Body -->
+                    <!--<div class="topic-bar">
+                <div id="topic-title">Smoking cessation and COPD</div>
+            </div>-->
+
+                    <div class="slidecontent" style="">
+                        <div id="s25frame1" class="frame">
+                            <div class="playBody">
+                                <div style="" id="s25bimg1" class="element">
+                                    <p class="breakout" style="width: 500px; font-size: 20px; position: relative; left: 10px;">
+                                        End of Module
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+
+                    <!--<div onclick="onclickShowTranscription(this);" id="stickyContent">
+                        <a href="#">
+                            <img src="../common/img/showTrans.png" class="showTrans" />
+                        </a>
+                    </div>
+                    <div id="transcript-hide" style="display: none;">
+                        <center> <button type="button" class="hidebutton" onclick="onclickHideTranscription(this);"> Hide Transcript</button></center>
+                        <div class="transcript" style="">
+                            <p>
+                                Congratulations! You have completed this module. Please complete the post-module quez to finish the module.
+                            </p>
+                            <p>Thank You! </p>
+
+
+                        </div>
+                    </div>-->
+                    <div onclick="onclickShowTranscription(this);" id="stickyContent">
+                        <a href="#">
+                            <img id="sh_trn" src="../common/../common/img/showTrans.png" />
+                        </a>
+                    </div>
+                    <div id="transcript-hide" style="display: none;">
+                        <div class="transcript" style="">
+                            <p>
+                                Congratulations! You have completed this module. Please complete the post-module quiz to finish the module.
+                            </p>
+                            <p>Thank You! </p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!--Disclaimer-->
+                <div id="lnact_1" style="display:none;" data-interactivity="true">
+                    <!--Body
+        <!--<div class="topic-bar">
+            <div id="topic-title">Deterioration of lung function</div>
+         </div>-->
+                    <div class="slidecontent" style="">
+                        <div id="" class="frame learningframe">
+                            <div style="padding-left: 20px">
+
+                                <p class="pbullhead" style="margin-left:0;font-size:16px!important;opacity:1;">
+                                    The masses of erectile tissue in the penis include
+                                </p>
+                                <br />
+                                <input type="hidden" id="Answer" value="3" qid="1" />
+                                <input type="hidden" id="AnswerText" value="2 corpora cavernosa and 1 corpus spongiosum" />
+                                <input type="hidden" id="Percentage" value="25" />
+                                <input type="hidden" id="OptionCount" value="1" />
+                                <div class="lrning_act_div_left">
+                                    <div id="" class="bullptxt radio_img_1" style="color:white">
+                                        <input name="ratio1" onclick="A_Type_Checkbox(this)" value="1" data-mutli="1" type="checkbox" style="" class="P_Radio" />
+                                        <p style="" class="P_radio_txt">2 corpus spongiosa and 1 corpus cavernosum</p>
+                                    </div>
+                                    <div id="" class="bullptxt radio_img_1" style="color:white">
+                                        <input name="ratio1" onclick="A_Type_Checkbox(this)" value="2" data-mutli="1" type="checkbox" class="P_Radio" />
+                                        <p class="P_radio_txt">1 corpus cavernosum, 1 corpus spongiosum</p>
+                                    </div>
+
+                                </div>
+                                <div class="lrning_act_div_right">
+
+                                    <div id="" class="bullptxt radio_img_1" style="color:white">
+                                        <input name="ratio1" onclick="A_Type_Checkbox(this)" value="3" data-mutli="1" type="checkbox" class="P_Radio" />
+                                        <p class="P_radio_txt">2 corpora cavernosa and 1 corpus spongiosum</p>
+                                    </div>
+                                    <div id="" class="bullptxt radio_img_1" style="color:white">
+                                        <input name="ratio1" onclick="A_Type_Checkbox(this)" value="4" data-mutli="1" type="checkbox" class="P_Radio" />
+                                        <p class="P_radio_txt">1 corpus cavernosum and its surrounding tunica albugiea</p>
+                                    </div>
+                                </div>
+
+
+                                <div style="margin-left: 425px; margin-top: 50px;">
+                                    <div>
+                                        <input id="button" onclick="onclickAnswer(this);" type="button" class="question_btn" value="Submit" style="width: 100px; margin-right: 25px; display: none; margin-bottom: -63px;" />
+                                    </div>
+                                    <br />
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <!--<div onclick="onclickShowTranscription(this);" id="stickyContent">
+                        <a href="#">
+                            <img src="../common/img/showTrans.png" class="showTrans" />
+                        </a>
+                    </div>
+                    <div id="transcript-hide" style="display: none;">
+                        <center> <button type="button" class="hidebutton" onclick="onclickHideTranscription(this);"> Hide Transcript</button></center>
+                        <div class="transcript" style="">
+                            <p>
+                                You will now be presented with a learning activity. Please choose the most appropriate option and click submit to continue.
+                            </p>
+                        </div>
+                    </div>-->
+                    <!--<div onclick="onclickShowTranscription(this);" id="stickyContent">
+                        <a href="#">
+                            <img id="sh_trn" src="../common/../common/img/showTrans.png" />
+                        </a>
+                    </div>
+                    <div id="transcript-hide" style="display: none;">
+                        <div class="transcript" style="">
+                            <p>
+                                You will now be presented with a learning activity. Please choose the most appropriate option and click submit to continue.
+                            </p>
+                        </div>
+                    </div>-->
+                </div>
+                <div id="lnact_2" style="display: none;" data-interactivity="true">
+                    <!--Body
+        <!--<div class="topic-bar">
+            <div id="topic-title">Deterioration of lung function</div>
+         </div>-->
+                    <div class="slidecontent" style="">
+                        <div id="" class="frame learningframe">
+                            <div style="padding-left: 20px">
+
+                                <p class="pbullhead" style="margin-left:0;font-size:16px!important;opacity:1;">
+                                    The NO/cGMP pathway
+                                </p>
+                                <br />
+                                <input type="hidden" id="Answer" value="4" qid="1" />
+                                <input type="hidden" id="AnswerText" value="A and B" />
+                                <input type="hidden" id="Percentage" value="25" />
+                                <input type="hidden" id="OptionCount" value="1" />
+                                <div class="lrning_act_div_left">
+                                    <div id="" class="bullptxt radio_img_1" style="color:white">
+                                        <input name="ratio1" onclick="A_Type_Checkbox(this)" value="1" data-mutli="1" type="checkbox" style="" class="P_Radio" />
+                                        <p style="" class="P_radio_txt">Regulates intracellular Ca2+ concentration </p>
+                                    </div>
+                                    <div id="" class="bullptxt radio_img_1" style="color:white">
+                                        <input name="ratio1" onclick="A_Type_Checkbox(this)" value="2" data-mutli="1" type="checkbox" class="P_Radio" />
+                                        <p class="P_radio_txt">Regulates smooth muscle relaxation in the penis</p>
+                                    </div>
+                                    <div id="" class="bullptxt radio_img_1" style="color:white">
+                                        <input name="ratio1" onclick="A_Type_Checkbox(this)" value="2" data-mutli="1" type="checkbox" class="P_Radio" />
+                                        <p class="P_radio_txt">Regulates release of NO from the cavernous nerves</p>
+                                    </div>
+
+                                </div>
+                                <div class="lrning_act_div_right">
+
+                                    <div id="" class="bullptxt radio_img_1" style="color:white">
+                                        <input name="ratio1" onclick="A_Type_Checkbox(this)" value="4" data-mutli="1" type="checkbox" class="P_Radio" />
+                                        <p class="P_radio_txt" style=" margin-top: 0px;">A and B</p>
+                                    </div>
+                                    <div id="" class="bullptxt radio_img_1" style="color:white">
+                                        <input name="ratio1" onclick="A_Type_Checkbox(this)" value="5" data-mutli="1" type="checkbox" class="P_Radio" />
+                                        <p class="P_radio_txt" style=" margin-top: 0px;">A and C</p>
+                                    </div>
+                                </div>
+
+
+                                <div style="margin-left: 425px; margin-top: 50px;">
+                                    <div>
+                                        <input id="button" onclick="onclickAnswer(this);" type="button" class="question_btn" value="Submit" style="width: 100px; margin-right: 25px; display: none;  margin-bottom: -172px;" />
+                                    </div>
+                                    <br />
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <!--<div onclick="onclickShowTranscription(this);" id="stickyContent">
+                        <a href="#">
+                            <img src="../common/img/showTrans.png" class="showTrans" />
+                        </a>
+                    </div>
+                    <div id="transcript-hide" style="display: none;">
+                        <center> <button type="button" class="hidebutton" onclick="onclickHideTranscription(this);"> Hide Transcript</button></center>
+                        <div class="transcript" style="">
+                            <p>
+                                You will now be presented with a learning activity. Please choose the most appropriate option and click submit to continue.
+                            </p>
+                        </div>
+                    </div>-->
+                    <!--<div onclick="onclickShowTranscription(this);" id="stickyContent">
+                        <a href="#">
+                            <img id="sh_trn" src="../common/../common/img/showTrans.png" />
+                        </a>
+                    </div>
+                    <div id="transcript-hide" style="display: none;">
+                        <div class="transcript" style="">
+                            <p>
+                                You will now be presented with a learning activity. Please choose the most appropriate option and click submit to continue.
+                            </p>
+                        </div>
+                    </div>-->
+                </div>
+                <div id="lnact_3" style="display: none;" data-interactivity="true">
+                    <!--Body
+        <!--<div class="topic-bar">
+            <div id="topic-title">Deterioration of lung function</div>
+         </div>-->
+                    <div class="slidecontent" style="">
+                        <div id="" class="frame learningframe">
+                            <div style="padding-left: 20px">
+
+                                <p class="pbullhead" style="margin-left:0;font-size:16px!important;opacity:1;">
+                                    Which of the following is not associated with erectile dysfunction?
+                                </p>
+                                <br />
+                                <input type="hidden" id="Answer" value="4" qid="1" />
+                                <input type="hidden" id="AnswerText" value="Hypothyroidism" />
+                                <input type="hidden" id="Percentage" value="25" />
+                                <input type="hidden" id="OptionCount" value="1" />
+                                <div class="lrning_act_div_left">
+
+                                    <div id="" class="bullptxt radio_img_1" style="color:white">
+                                        <input name="ratio1" onclick="A_Type_Checkbox(this)" value="4" data-mutli="1" type="checkbox" class="P_Radio" />
+                                        <p class="P_radio_txt" style=" margin-top: 0px;">diabetes mellitus</p>
+                                    </div>
+                                    <div id="" class="bullptxt radio_img_1" style="color:white">
+                                        <input name="ratio1" onclick="A_Type_Checkbox(this)" value="5" data-mutli="1" type="checkbox" class="P_Radio" />
+                                        <p class="P_radio_txt" style=" margin-top: 0px;">Hyperthyroidism</p>
+                                    </div>
+                                    <div id="" class="bullptxt radio_img_1" style="color:white">
+                                        <input name="ratio1" onclick="A_Type_Checkbox(this)" value="5" data-mutli="1" type="checkbox" class="P_Radio" />
+                                        <p class="P_radio_txt" style=" margin-top: 0px;">Klinefelter’s syndrome</p>
+                                    </div>
+                                </div>
+                                <div class="lrning_act_div_right">
+
+                                    <div id="" class="bullptxt radio_img_1" style="color:white">
+                                        <input name="ratio1" onclick="A_Type_Checkbox(this)" value="4" data-mutli="1" type="checkbox" class="P_Radio" />
+                                        <p class="P_radio_txt" style=" margin-top: 0px;">Hypothyroidism</p>
+                                    </div>
+                                    <div id="" class="bullptxt radio_img_1" style="color:white">
+                                        <input name="ratio1" onclick="A_Type_Checkbox(this)" value="5" data-mutli="1" type="checkbox" class="P_Radio" />
+                                        <p class="P_radio_txt" style=" margin-top: 0px;">None of the above</p>
+                                    </div>
+                                </div>
+
+
+                                <div style="margin-left: 425px; margin-top: 50px;">
+                                    <div>
+                                        <input id="button" onclick="onclickAnswer(this);" type="button" class="question_btn" value="Submit" style="width: 100px; margin-right: 25px; display: none; margin-bottom:-172px;" />
+                                    </div>
+                                    <br />
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <!--<div onclick="onclickShowTranscription(this);" id="stickyContent">
+                        <a href="#">
+                            <img src="../common/img/showTrans.png" class="showTrans" />
+                        </a>
+                    </div>
+                    <div id="transcript-hide" style="display: none;">
+                        <center> <button type="button" class="hidebutton" onclick="onclickHideTranscription(this);"> Hide Transcript</button></center>
+                        <div class="transcript" style="">
+                            <p>
+                                You will now be presented with a learning activity. Please choose the most appropriate option and click submit to continue.
+                            </p>
+                        </div>
+                    </div>-->
+                    <!--<div onclick="onclickShowTranscription(this);" id="stickyContent">
+                        <a href="#">
+                            <img id="sh_trn" src="../common/../common/img/showTrans.png" />
+                        </a>
+                    </div>
+                    <div id="transcript-hide" style="display: none;">
+                        <div class="transcript" style="">
+                            <p>
+                                You will now be presented with a learning activity. Please choose the most appropriate option and click submit to continue.
+                            </p>
+                        </div>
+                    </div>-->
+                </div>
+                <div id="lnact_4" style="display: none;" data-interactivity="true">
+                    <!--Body
+        <!--<div class="topic-bar">
+            <div id="topic-title">Deterioration of lung function</div>
+         </div>-->
+                    <div class="slidecontent" style="">
+                        <div id="" class="frame learningframe" >
+                            <div style="padding-left: 20px">
+
+                                <p class="pbullhead" style="margin-left:0;font-size:16px!important;opacity:1;">
+                                    Estimated global prevalence of erectile dysfunction by 2025 is
+                                </p>
+                                <br />
+                                <input type="hidden" id="Answer" value="3" qid="3" />
+                                <input type="hidden" id="AnswerText" value="322 million" />
+                                <input type="hidden" id="Percentage" value="25" />
+                                <input type="hidden" id="OptionCount" value="1" />
+                                <div class="lrning_act_div_left">
+
+                                    <div id="" class="bullptxt radio_img_1" style="color:white">
+                                        <input name="ratio1" onclick="A_Type_Checkbox(this)" value="1" data-mutli="1" type="checkbox" class="P_Radio" />
+                                        <p class="P_radio_txt" style=" margin-top: 0px;">3 million</p>
+                                    </div>
+                                    <div id="" class="bullptxt radio_img_1" style="color:white">
+                                        <input name="ratio1" onclick="A_Type_Checkbox(this)" value="2" data-mutli="1" type="checkbox" class="P_Radio" />
+                                        <p class="P_radio_txt" style=" margin-top: 0px;">32 million</p>
+                                    </div>
+
+                                </div>
+                                <div class="lrning_act_div_right">
+
+                                    <div id="" class="bullptxt radio_img_1" style="color:white">
+                                        <input name="ratio1" onclick="A_Type_Checkbox(this)" value="3" data-mutli="1" type="checkbox" class="P_Radio" />
+                                        <p class="P_radio_txt" style=" margin-top: 0px;">322 million</p>
+                                    </div>
+                                </div>
+
+
+                                <div style="margin-left: 425px; margin-top: 50px;">
+                                    <div>
+                                        <input id="button" onclick="onclickAnswer(this);" type="button" class="question_btn" value="Submit" style="width: 100px; margin-right: 25px; display: none;    margin-bottom: -168px;" />
+                                    </div>
+                                    <br />
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <!--<div onclick="onclickShowTranscription(this);" id="stickyContent">
+                        <a href="#">
+                            <img src="../common/img/showTrans.png" class="showTrans" />
+                        </a>
+                    </div>
+                    <div id="transcript-hide" style="display: none;">
+                        <center> <button type="button" class="hidebutton" onclick="onclickHideTranscription(this);"> Hide Transcript</button></center>
+                        <div class="transcript" style="">
+                            <p>
+                                You will now be presented with a learning activity. Please choose the most appropriate option and click submit to continue.
+                            </p>
+                        </div>
+                    </div>-->
+                    <!--<div onclick="onclickShowTranscription(this);" id="stickyContent">
+                        <a href="#">
+                            <img id="sh_trn" src="../common/../common/img/showTrans.png" />
+                        </a>
+                    </div>
+                    <div id="transcript-hide" style="display: none;">
+                        <div class="transcript" style="">
+                            <p>
+                                You will now be presented with a learning activity. Please choose the most appropriate option and click submit to continue.
+                            </p>
+                        </div>
+                    </div>-->
+                </div>
+                <!--Disclaimer-->
+
+            </div>
+                </div>
+
+
+
+
+
+                <div id="footer" style="width: 888px; margin:0 auto; position: absolute;">
+                    <div class="container" style="">
+                        <table style="width: 100%">
+                            <tr>
+                                <td style="width: 65px; height: 35px; margin-top: 3px; margin-right: 10px; margin-left: -25px;"></td>
+                                <td>
+                                    <img onmouseover="HideToolTip(this)" data-toggle="tooltip" title="Play / Pause" class="effect control" id="toggelbutton" src="../common/img/playBtn.png" style="float: left;" onclick="    play()" />
+                                </td>
+                                <td>
+                                    <div style="float: left;">
+                                        <input id="progress-bar" type="text" data-slider="true" data-slider-highlight="true">
+                                        <div class="slider-control"><span id="slideCount">Frame 0 of 00</span> <span style="float: right;"><span id="timeduration">0:00</span> / <span id="slideduration">0:00</span></span> </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <img data-toggle="tooltip" onmouseover="HideToolTip(this)" id="PrevImg" data-placement="customtooltip1" title="Previous Slide " class="effect control" src="../common/img/prevBtn.png" onclick="Prev()" />
+                                </td>
+                                <td>
+                                    <img data-toggle="tooltip" onmouseover="HideToolTip(this)" id="NxtImg" title="Next Slide" class="effect control" src="../common/img/nxtBtn.png" onclick="Next()" />
+                                </td>
+                                <td>
+                                    <img onclick="ShowHelp(); " onmouseover="HideToolTip(this)" id="showHelp" src="../common/img/smallicon2.png" style="margin-left: 35px;" class="effect" />
+                                </td>
+                                <td id="trns_script">
+
+                                    <img onclick="onClickPdf();" onmouseover="HideToolTip(this)" data-toggle="tooltip" title="Print" class="effect" src="../common/img/smallicon3.png" />
+
+                                </td>
+                            </tr>
+
+                        </table>
+
+                        <!--  <img class="effect" src="../common/img/pauseBtn.png" style="float: left; margin-top: -10px;" onclick="pause()" />-->
+                    </div>
+                </div>
+
+                <div class="modal " id="AnswerModal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content" style="top:200px;">
+                            <div class="modal-body">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" onclick="onclickAnswerContinue()" class="question_btn">Continue</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal " id="DragDropModal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content" style="top:200px;">
+                            <div class="modal-body" id="ddans">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" data-dismiss="modal" class="question_btn">Continue</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal  " id="viewedframe" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content" style="top:200px;">
+                            <div class="modal-body" id="view">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" onclick=" $('#viewedframe').modal('hide');" class="question_btn">Close</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        <div class="modal  " id="disclaimer" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content" style="margin-top:135px;">
+                    <div class="modal-header">
+                      
+                        <h4 class="modal-title" id="myModalLabel">Disclaimer</h4>
+                    </div>
+                    <div class="modal-body" id="disclaimer">
+                       This material is designed to be educational and non-promotional. It is offered so that the pharmacist receives accurate and important health information about the available therapeutic options for treatment of ED and BPH, so that the pharmacist can discuss with patients the medication consistent with the pharmacist's professional responsibilities. By providing this information, this program is in no way is encouraging the pharmacist to prescribe or dispense medicines without a prescription or as otherwise prohibited by law
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" onclick=" $('#disclaimer').modal('hide');coursePlayer.play();" class="question_btn">Continue</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+            </div>
+</body>
+
+</html>
